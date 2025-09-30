@@ -1,0 +1,103 @@
+[
+  {
+    "objectID": "tutorials.html",
+    "href": "tutorials.html",
+    "title": "Tutorials",
+    "section": "",
+    "text": "We provide an extensive set of tutorials to get familiar with devito’s internals, capabilities and use cases. In details we offer the following topics:\n\nUser API contains API description notebooks to get started with Devito.\nCompiler introduces the compiler and the internal representation used to lower the symbolic expression to high performance code.\nPerformance tips introduce the performance optimization knobs exposed to the users.\nSeismic modeling and inversion contains a broad set of notebooks that implements various wave equations for modeling and inversion.\nCFD offers a full rendering of the original CFD Python: 12 steps to Navier-Stokes by Lorena Barba using Devito.\nFinance contains an introductory notebook using Devito to model the Black-Scholes equations.\n\nAll those notebooks can be interactively explored in our binder server as well.\n\n\n\n Back to top",
+    "crumbs": [
+      "Tutorials"
+    ]
+  },
+  {
+    "objectID": "sponsors.html",
+    "href": "sponsors.html",
+    "title": "Sponsors",
+    "section": "",
+    "text": "We gratefully acknowledge the support received to develop Devito from industry and research council funding.\n\nOpen source Devito consortium\nThis was a 3-year consortium that ran from January 2020-December 2022. The consortium is now closed. Please see https://www.devitocodes.com/ and contact details therein if you are interested in using Devito commercially. Consortium members are:\n\nBP\nDUG\nPetrobras\nShell\n\n\n\nOther industry sponsors\n\nAMD\nChevron\nFujitsu\nIntel\nMicrosoft\nNvidia\n\n\n\nResearch Council grants\n\nEP/W007789/1\nEP/V001493/1\nEP/R029423/1\n\n\n\nDevito Codes Ltd.\nDevito is also supported directly by Devito Codes Ltd. Devito Codes Ltd uses an open-core business model to provide commercial services while reinvesting in Devito’s open-source development, support, and maintenance.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Research Companionship",
+    "section": "",
+    "text": "Here we are, organization of the research base. For now, this site is hosted and structured on the provision and purposes of 藤宮天音, or Bui Gia Khanh, of here, or it is just me. There should be not much going on here, however, you might as well treat it as my very own hub of operation at large, in public, for research, collaborations, et cetera. Also, I hate coding, so I will need something in here… quick. The template for this site is basically, devitoproject.org, of which I take for certain specification.\nMost of the content here right now are proposals, ideas, and research problems that I took virtue to describe and partake upon. Individual articles are set up here for reference purpose as to describe the research topic at large. For project, documentation purposes fit them neatly in such realm, and for documentation on various topics, we delegate such description to their own due."
+  },
+  {
+    "objectID": "index.html#current-topics",
+    "href": "index.html#current-topics",
+    "title": "The Research Companionship",
+    "section": "Current topics",
+    "text": "Current topics\nMy current topic of interest includes:\n\nComputational learning theory and statistical learning theory.\nDeep neural network theoretical explanation.\nFoundation of machine learning research.\nFoundation of physics.\nRaman spectroscopy and deep learning application.\nNeurology and computational models of neurophysiology.\nQuantum mechanics and quantum well (of semiconductor device structures).\n\nMost of them are theoretical, some are practical in the sense of model evaluation and thereof. Generally, I am fairly bad of practical application, though that is a front to improve upon. I am also interested in mathematics, including the theory of probability, category theory. Some of the potential topics then also includes theoretical computational model, type theory, and theoretical mathematical modelling."
+  },
+  {
+    "objectID": "index.html#current-collaborator",
+    "href": "index.html#current-collaborator",
+    "title": "The Research Companionship",
+    "section": "Current collaborator",
+    "text": "Current collaborator\nRight, now my collaborators are Daud Shahbaz, Duong Ngoc Khoa, and a few more people. If you want to collaborate, please look into the catalogue for some of my proposals and already in progress works."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "This website is just the front of the research effort. For information regarding me, please refer to this website, where both my personal blog and CV site can be found.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "citing.html",
+    "href": "citing.html",
+    "title": "Citing",
+    "section": "",
+    "text": "Well, what is even here to cite? Hopefully in the future.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Are there even anything to say?\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "",
+    "section": "",
+    "text": "This page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate. For now, let us construct the main foundation on what are we going to do with the short-term papers and not the long-term, 2.5 years waitlist papers."
+  },
+  {
+    "objectID": "publications.html#list-of-interesting-topics",
+    "href": "publications.html#list-of-interesting-topics",
+    "title": "",
+    "section": "List of interesting topics",
+    "text": "List of interesting topics\nFor now, here are some of the paper topics:\n\nDouble descent: a review (review, reference): A reference and review paper talking about double descent. Including effort to formalize the definition of it.\nInterpreting double descent in polynomial via density estimation (original, theory): A fairly light and theoretical paper on the toy model description of polynomial model and different interpretation.\nDouble descent on support vector machine and polynomial models on binary classification - an analysis (experimental, theory): A both theory and experimental paper.\nPINNs and double descent (experimental): An experimental on PINNs and how to identify double descent on it.\nClassical learning theory and future (original, review, experiments).\nA review of model structures in machine learning and theoretical machine learning (theoretical, review, reference): A reference paper on the concept of models in machine learning, their structures, flavour, consideration, and thereof.\nDifferent treatment of machine learning - an analysis (review, reference, original): A paper on the different treatment of machine learning, from different lens and scale, and how do they fit together (categorical machine learning for example).\nReuniting the neural network framework using partial category theory (original, theory): Using the proposed categorical machine learning or neural network to consider reuniting different architecture together under the same framework.\nOn the capacity and capability of neural networks (review, original): A paper analysing the capacity and capability of neural networks on various task and setting thereof, and so forth, considering different structures.\nMachine learning from a mathematical modelling view (review, original): Proposing a modelling theoretic, internal state interpretation to machine learning.\nThe analysis of statistical physics on machine learning (review, original): Setting up a review work on how statistical physics is related to machine learning, where is it failing and what constitute the failure.\nClassical model into neural network architecture - an analysis (original, theoretical): An attempt to attack and formalize classical models into neural network theoretic (unit-wise approach of neuronal unit) to classical models, hence gauging their capability.\nUnsolved problems in theoretical machine learning (original, review): A work in review of different interpretations and problems residing the current framework of machine learning.\nDifferential equations and machine learning - interpreting machine learning system using differential equations (original, theory): An attempt to express ML systems in terms of differential equations, just as the differential model.\nLLM cannot be AGI - the kind of paper.\nNeural network learning equals mathematical model structural approximation (original, theory, experiment).\nConcentration inequalities in theoretical machine learning for beginner.\nStructural addition in machine learning - an analysis.\nComponent and structural realization of large language model and why they are not intelligent - just to prove that LLM is not, well, intelligent and again, won’t ever be AGI.\nHallucination is bias-variance tradeoff - we just, well, connect it to them.\nVisualization of neural network operation and layer theoretic.\nTime-sensitive processing network - something that look like an operational system in the inner units of the neural network, so yeah.\nAlways running neural network. Mimicking a network to well, always run and is not static.\nVisualizing dynamics and bias-variance plus double descent.\nInformation theoretic interpretation of machine learning framework.\nRandomized neural network architecture on permutations (theory, experiment, original) - just a way to do such analysis.\nMultiNet - A new multidirectional structure of neural network formalism (original, experimentation) - just a generalization of what I observed of neural network structure in general. Will have to base on existing facility, can’t do anything else.\nTheoretical explanation for Neural Scaling Law (original, theoretical) - Just an attempt to solve the neural scaling law.\n\nFor now, they are short papers for machine learning. On physics, well.\n\nThe theory of Raman Spectroscopy (review, reference): On the theory of Raman spectroscopy on itself, different interpretation, history, approaches, and problems. That is it for now. More is in the PDF file itself, which is listed there for reasons."
+  },
+  {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "Tutorial for documentation",
+    "section": "",
+    "text": "Since a lot of my work is on the website, which is deliberately built upon quarto and thereof, there are tutorials to be made in advance. Some of these tutorials are from NOAA webpages."
+  },
+  {
+    "objectID": "tutorial.html#edit-and-add-your-pages",
+    "href": "tutorial.html#edit-and-add-your-pages",
+    "title": "Tutorial for documentation",
+    "section": "Edit and add your pages",
+    "text": "Edit and add your pages\nEdit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "tutorial.html#add-your-pages-the-project",
+    "href": "tutorial.html#add-your-pages-the-project",
+    "title": "Tutorial for documentation",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+  },
+  {
+    "objectID": "tutorial.html#webpage-publishing",
+    "href": "tutorial.html#webpage-publishing",
+    "title": "Tutorial for documentation",
+    "section": "Webpage publishing",
+    "text": "Webpage publishing\nTo get your Quarto webpage to show up with the url\nyourname.github.io/yourrepo\nyou have a few steps.\n\nTurn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up\n\n\nDo your first publish\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch, which is also most of the time the website is deployed."
+  }
+]
