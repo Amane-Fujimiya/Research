@@ -1,0 +1,27 @@
+/*-- scss:mixins --*/
+
+:root {
+  --navbar-bg: #222222;
+}
+
+html
+{
+  filter: brightness(72%) ;
+}
+
+p strong, li strong {
+  color: #ca5404;
+  font-weight: 800;
+}
+
+:root {
+  --teal-italic: #2392a8;
+}
+
+
+:root {
+  --dr-hue: 180deg;
+  --dr-overlay: 0.06;
+  --accent-orange: #d35400;
+  --accent-teal:   #2C9AB0;
+}

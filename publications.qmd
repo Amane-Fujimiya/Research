@@ -1,0 +1,47 @@
+---
+layout: default
+permalink: /publications
+
+#title: "Academic journals, conferences, videos articles, Next generation subsurface imaging software"
+
+---
+
+This page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate. For now, let us construct the main foundation on what are we going to do with the short-term papers and not the long-term, 2.5 years waitlist papers. 
+
+## List of interesting topics
+
+For now, here are some of the paper topics: 
+
+1. **Double descent: a review** (review, reference): A reference and review paper talking about double descent. Including effort to formalize the definition of it.
+2. **Interpreting double descent in polynomial via density estimation** (original, theory): A fairly light and theoretical paper on the toy model description of polynomial model and different interpretation. 
+3. **Double descent on support vector machine and polynomial models on binary classification - an analysis** (experimental, theory): A both theory and experimental paper. 
+4. **PINNs and double descent** (experimental): An experimental on PINNs and how to identify double descent on it. 
+5. **Classical learning theory and future** (original, review, experiments). 
+6. **A review of model structures in machine learning and theoretical machine learning** (theoretical, review, reference): A reference paper on the concept of models in machine learning, their structures, flavour, consideration, and thereof. 
+7. **Different treatment of machine learning - an analysis** (review, reference, original): A paper on the different treatment of machine learning, from different lens and scale, and how do they fit together (categorical machine learning for example). 
+8. **Reuniting the neural network framework using partial category theory** (original, theory): Using the proposed categorical machine learning or neural network to consider reuniting different architecture together under the same framework. 
+9. **On the capacity and capability of neural networks** (review, original): A paper analysing the capacity and capability of neural networks on various task and setting thereof, and so forth, considering different structures. 
+10. **Machine learning from a mathematical modelling view** (review, original): Proposing a modelling theoretic, internal state interpretation to machine learning. 
+11. **The analysis of statistical physics on machine learning** (review, original): Setting up a review work on how statistical physics is related to machine learning, where is it failing and what constitute the failure. 
+12. **Classical model into neural network architecture - an analysis** (original, theoretical): An attempt to attack and formalize classical models into neural network theoretic (unit-wise approach of neuronal unit) to classical models, hence gauging their capability. 
+13. **Unsolved problems in theoretical machine learning** (original, review): A work in review of different interpretations and problems residing the current framework of machine learning. 
+14. **Differential equations and machine learning - interpreting machine learning system using differential equations** (original, theory): An attempt to express ML systems in terms of differential equations, just as the differential model. 
+15. **LLM cannot be AGI** - the kind of paper. 
+16. **Neural network learning equals mathematical model structural approximation** (original, theory, experiment). 
+17. **Concentration inequalities in theoretical machine learning for beginner**. 
+18. **Structural addition in machine learning - an analysis**. 
+19. **Component and structural realization of large language model and why they are not intelligent** - just to prove that LLM is not, well, intelligent and again, won't ever be AGI. 
+20. **Hallucination is bias-variance tradeoff** - we just, well, connect it to them. 
+21.  **Visualization of neural network operation and layer theoretic**. 
+22.  **Time-sensitive** processing network - something that look like an operational system in the inner units of the neural network, so yeah. 
+23.  **Always running neural network**. Mimicking a network to well, always run and is not static. 
+24.  **Visualizing dynamics and bias-variance plus double descent**. 
+25.  **Information theoretic interpretation of machine learning framework**. 
+26.  **Randomized neural network architecture on permutations** (theory, experiment, original) - just a way to do such analysis. 
+27.  **`MultiNet` - A new multidirectional structure of neural network formalism** (original, experimentation) - just a generalization of what I observed of neural network structure in general. Will have to base on existing facility, can't do anything else. 
+28.  **Theoretical explanation for Neural Scaling Law** (original, theoretical) - Just an attempt to solve the neural scaling law. 
+
+For now, they are short papers for machine learning. On physics, well. 
+
+29.  **The theory of Raman Spectroscopy** (review, reference): On the theory of Raman spectroscopy on itself, different interpretation, history, approaches, and problems. 
+That is it for now. More is in the `PDF` file itself, which is listed there for reasons. 

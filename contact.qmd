@@ -1,0 +1,5 @@
+---
+title: "Contact"
+---
+
+This website is just the front of the research effort. For information regarding me, please refer to [this website](https://amane-fujimiya.github.io/), where both my personal blog and CV site can be found.

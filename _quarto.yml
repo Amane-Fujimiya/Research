@@ -1,0 +1,100 @@
+project:
+  type: website
+
+metadata-files:
+  - _sidebar.yml
+
+website:
+  title: ""
+  image: images/favicon.ico
+  repo-url: https://github.com/devitocodes/devitocodes.github.io
+  repo-actions: [issue]
+  page-navigation: true
+  reader-mode: true
+  back-to-top-navigation: true
+  google-analytics: "UA-66708188-1"
+  search:
+    type: overlay
+
+  twitter-card: 
+    site: "@DevitoCodes"
+
+  page-footer:
+    center:
+      - text: "2025 Copyright (c) Bui Gia Khanh (Fujimiya Amane) and others"
+    right:
+      - icon: twitter
+        href: https://x.com/Fujimiya_Amane_
+        aria-label: Twitter
+      - icon: github
+        href: https://github.com/Amane-Fujimiya
+        aria-label: GitHub
+
+  navbar:
+    logo: images/favicon.ico
+    collapse-below: lg
+    background: light
+
+    tools:
+      - icon: github
+        menu:
+          - text: Fujimiya Amane
+            href: https://github.com/Amane-Fujimiya
+      - icon: twitter
+        href: https://x.com/Fujimiya_Amane_
+      - icon: linkedin
+        href: https://www.linkedin.com/in/amane-fujimiya-731b52216/
+    left:
+      - file: index.qmd
+        text: "Home"
+      - file: tutorial.qmd
+        text: "Guidance"
+      - text: "FAQ"
+        href: FAQ.qmd
+      - file: publications.qmd
+        text: "Research"
+      - file: citing.qmd
+        text: "References"
+      - file: contact.qmd
+        text: "Contact"
+  
+  sidebar:
+    - id: tuto
+      style: "floating"
+      title: "Tutorials"
+      collapse-level: 1
+      contents:
+          - section: Tutorials
+            href: tutorials.qmd
+            contents:
+              - section: "User API"
+                contents: "examples/userapi/*.ipynb"
+              - section: "Compiler"
+                contents: "examples/compiler/*.ipynb"
+              - section: "Performance tips"
+                contents: "examples/performance/*.ipynb"
+              - section: "Seismic modeling and inversion"
+                contents:
+                  - auto: "examples/seismic/tutorials/*.ipynb"
+                  - auto: "examples/seismic/self_adjoint/*.ipynb"
+                  - "examples/seismic/acoustic/accuracy.ipynb"
+              - section: "CFD"
+                contents: "examples/cfd/*.ipynb"
+              - section: "Finance"
+                contents: "examples/finance/*.ipynb"
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/css/light.scss]
+      dark: [cyborg, assets/css/dark.css]
+    css: assets/css/main.scss
+    toc: true
+    link-external-newwindow: True
+    code-copy: true
+    code-fold: false
+    execute: 
+      enabled: false
+  ipynb: default
+
+

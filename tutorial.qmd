@@ -1,0 +1,55 @@
+---
+title: Tutorial for documentation
+---
+Since a lot of my work is on the website, which is deliberately built upon `quarto` and thereof, there are tutorials to be made in advance. Some of these tutorials are from NOAA webpages. 
+
+## Edit and add your pages
+
+Edit the qmd or md files in the `content` folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).
+
+Each page should start with 
+```
+---
+title: your title
+---
+```
+and the first header will be the 2nd level, so `## `. Note, there are situations where you leave off
+```
+---
+title: your title
+---
+```
+and start the qmd file with a level header `# `, but if using the default title yaml (in the `---` fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).
+
+## Add your pages the project
+
+* Add the files to `_quarto.yml`
+
+## Webpage publishing
+
+To get your Quarto webpage to show up with the url
+```
+yourname.github.io/yourrepo
+```
+you have a few steps.
+
+### Turn on GitHub Pages for your repo
+
+* Turn on GitHub Pages under Settings > Pages . You will set pages to be made from the gh-pages branch and the root directory.
+* Turn on GitHub Actions under Settings > Actions > General
+
+The GitHub Action will automatically recreate your website when you push to GitHub **after** you do the initial `gh-pages` set-up
+
+### Do your first publish 
+
+The first time you publish to `gh-pages`, you need to do so locally.
+
+* On your local computer, open a terminal window and `cd` to your repo directory. Here is what that `cd` command looks like for me. You command will look different because your local repo will be somewhere else on your computer.
+```
+cd ~/Documents/GitHub/NOAA-quarto-simple
+```
+* Publish to the `gh-pages`. In the terminal type
+```
+quarto publish gh-pages
+```
+This is going to render your webpage and then push the `_site` contents to the `gh-pages` branch, which is also most of the time the website is deployed. 

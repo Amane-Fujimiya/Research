@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /
+title: "The Research Companionship"
+bibliography: webbib.bib
+---
+
+Here we are, organization of the research base. For now, this site is hosted and structured on the provision and purposes of 藤宮天音, or Bui Gia Khanh, of [here](https://amane-fujimiya.github.io/), or it is just me. There should be not much going on here, however, you might as well treat it as my very own hub of operation at large, in public, for research, collaborations, et cetera. Also, I hate coding, so I will need something in here... quick. The template for this site is basically, [devitoproject.org](devitoproject.org), of which I take for certain specification. 
+
+Most of the content here right now are proposals, ideas, and research problems that I took virtue to describe and partake upon. Individual articles are set up here for reference purpose as to describe the research topic at large. For project, documentation purposes fit them neatly in such realm, and for documentation on various topics, we delegate such description to their own due. 
+
+## Current topics
+
+My current topic of interest includes: 
+
+1. Computational learning theory and statistical learning theory. 
+2. Deep neural network theoretical explanation. 
+3. Foundation of machine learning research. 
+4. Foundation of physics. 
+5. Raman spectroscopy and deep learning application. 
+6. Neurology and computational models of neurophysiology. 
+7. Quantum mechanics and quantum well (of semiconductor device structures). 
+
+Most of them are theoretical, some are practical in the sense of model evaluation and thereof. Generally, I am fairly bad of practical application, though that is a front to improve upon. I am also interested in mathematics, including the theory of probability, category theory. Some of the potential topics then also includes *theoretical computational model*, *type theory*, and theoretical mathematical modelling. 
+
+## Current collaborator
+
+Right, now my collaborators are [Daud Shahbaz](https://www.linkedin.com/in/daudshahbaz/), [Duong Ngoc Khoa](https://www.linkedin.com/in/duong-khoa-a77592378/), and a few more people. If you want to collaborate, please look into the [catalogue](publications.qmd) for some of my proposals and already in progress works. 

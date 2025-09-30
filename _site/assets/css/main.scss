@@ -1,0 +1,49 @@
+---
+---
+
+/*
+ *
+ *  Skinny Bones Jekyll Starter
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
+
+// Partials
+@import "gist";
+@import "variables";
+@import "vendor/bourbon/bourbon";
+@import "grid-settings";
+@import "vendor/neat/neat";
+@import "vendor/font-awesome/font-awesome";
+@import "mixins";
+@import "reset";
+@import "base";
+@import "helpers";
+@import "buttons";
+@import "badges";
+@import "bullets";
+@import "sliding-menu";
+@import "notices";
+@import "animations";
+@import "layout";
+@import "pygments";
+
+
+p strong, li strong {
+  color: #ca5404;
+  font-weight: 800;
+}
+
+:root {
+  --teal-italic: #2392a8;
+}
+
+
+:root {
+  --dr-hue: 180deg;
+  --dr-overlay: 0.06;
+  --accent-orange: #d35400;
+  --accent-teal:   #2C9AB0;
+}
