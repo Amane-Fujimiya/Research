@@ -4,10 +4,7 @@
     "href": "tutorials.html",
     "title": "Tutorials",
     "section": "",
-    "text": "We provide an extensive set of tutorials to get familiar with devito’s internals, capabilities and use cases. In details we offer the following topics:\n\nUser API contains API description notebooks to get started with Devito.\nCompiler introduces the compiler and the internal representation used to lower the symbolic expression to high performance code.\nPerformance tips introduce the performance optimization knobs exposed to the users.\nSeismic modeling and inversion contains a broad set of notebooks that implements various wave equations for modeling and inversion.\nCFD offers a full rendering of the original CFD Python: 12 steps to Navier-Stokes by Lorena Barba using Devito.\nFinance contains an introductory notebook using Devito to model the Black-Scholes equations.\n\nAll those notebooks can be interactively explored in our binder server as well.\n\n\n\n Back to top",
-    "crumbs": [
-      "Tutorials"
-    ]
+    "text": "We provide an extensive set of tutorials to get familiar with devito’s internals, capabilities and use cases. In details we offer the following topics:\n\nUser API contains API description notebooks to get started with Devito.\nCompiler introduces the compiler and the internal representation used to lower the symbolic expression to high performance code.\nPerformance tips introduce the performance optimization knobs exposed to the users.\nSeismic modeling and inversion contains a broad set of notebooks that implements various wave equations for modeling and inversion.\nCFD offers a full rendering of the original CFD Python: 12 steps to Navier-Stokes by Lorena Barba using Devito.\nFinance contains an introductory notebook using Devito to model the Black-Scholes equations.\n\nAll those notebooks can be interactively explored in our binder server as well.\n\n\n\n Back to top"
   },
   {
     "objectID": "sponsors.html",
@@ -35,14 +32,21 @@
     "href": "index.html#current-collaborator",
     "title": "The Research Companionship",
     "section": "Current collaborator",
-    "text": "Current collaborator\nRight, now my collaborators are Daud Shahbaz, Duong Ngoc Khoa, and a few more people. If you want to collaborate, please look into the catalogue for some of my proposals and already in progress works."
+    "text": "Current collaborator\nRight, now my collaborators are Daud Shahbaz, Duong Ngoc Khoa, and a few more people. If you want to collaborate, please look into the catalogue for some of my proposals and already in progress works. Though I doubt at this stage there can be anything to offer."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "content/r29.html",
+    "href": "content/r29.html",
+    "title": "",
     "section": "",
-    "text": "This website is just the front of the research effort. For information regarding me, please refer to this website, where both my personal blog and CV site can be found.\n\n\n\n Back to top"
+    "text": "The research on this site is of the Theory of Raman Spectroscopy. Participant in such regard is Duong Ngoc Khoa and Yogesh Verma (a particular person we met during previous ASC 2025). The sheet for organization is this one. Github site will be delivered together in the long term."
+  },
+  {
+    "objectID": "content/r29.html#planning",
+    "href": "content/r29.html#planning",
+    "title": "",
+    "section": "Planning",
+    "text": "Planning\nIt is then we have to elaborate on explaining what we are going to do within the confinement of the topic by itself. Originally, the idea comes from my own blog documentation over here of the same expository analysis toward Raman Spectroscopy. So most of them will be there, and it will not be so particularly hard to figure out what to do in such research. The goal of the research, nevertheless, is to gain a comprehensive framework and outlook toward the problem of Raman spectroscopy, what theories support and explain it in what way, caveat, concepts that is used in analysing Raman spectroscopy, what type of differences between classical and quantum mechanical treatments in vibrational infrared range, and so on so forth. This all stems from the hardship in delivering and targeting the problem itself during the process of writing that essay, so to speak."
   },
   {
     "objectID": "citing.html",
@@ -52,11 +56,18 @@
     "text": "Well, what is even here to cite? Hopefully in the future.\n\n\n\n Back to top"
   },
   {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "This website is just the front of the research effort. For information regarding me, please refer to this website, where both my personal blog and CV site can be found.\n\n\n\n Back to top"
+  },
+  {
     "objectID": "faq.html",
     "href": "faq.html",
     "title": "FAQ",
     "section": "",
-    "text": "Are there even anything to say?\n\n\n\n Back to top"
+    "text": "Are there even anything to say? I mean yes, but yeah, generaly, it is not rigorous enough to warrant a direct affiliation toward what to ask, even.\n\n\n\n Back to top"
   },
   {
     "objectID": "publications.html",
@@ -66,11 +77,18 @@
     "text": "This page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate. For now, let us construct the main foundation on what are we going to do with the short-term papers and not the long-term, 2.5 years waitlist papers."
   },
   {
-    "objectID": "publications.html#list-of-interesting-topics",
-    "href": "publications.html#list-of-interesting-topics",
+    "objectID": "publications.html#current-works",
+    "href": "publications.html#current-works",
     "title": "",
-    "section": "List of interesting topics",
-    "text": "List of interesting topics\nFor now, here are some of the paper topics:\n\nDouble descent: a review (review, reference): A reference and review paper talking about double descent. Including effort to formalize the definition of it.\nInterpreting double descent in polynomial via density estimation (original, theory): A fairly light and theoretical paper on the toy model description of polynomial model and different interpretation.\nDouble descent on support vector machine and polynomial models on binary classification - an analysis (experimental, theory): A both theory and experimental paper.\nPINNs and double descent (experimental): An experimental on PINNs and how to identify double descent on it.\nClassical learning theory and future (original, review, experiments).\nA review of model structures in machine learning and theoretical machine learning (theoretical, review, reference): A reference paper on the concept of models in machine learning, their structures, flavour, consideration, and thereof.\nDifferent treatment of machine learning - an analysis (review, reference, original): A paper on the different treatment of machine learning, from different lens and scale, and how do they fit together (categorical machine learning for example).\nReuniting the neural network framework using partial category theory (original, theory): Using the proposed categorical machine learning or neural network to consider reuniting different architecture together under the same framework.\nOn the capacity and capability of neural networks (review, original): A paper analysing the capacity and capability of neural networks on various task and setting thereof, and so forth, considering different structures.\nMachine learning from a mathematical modelling view (review, original): Proposing a modelling theoretic, internal state interpretation to machine learning.\nThe analysis of statistical physics on machine learning (review, original): Setting up a review work on how statistical physics is related to machine learning, where is it failing and what constitute the failure.\nClassical model into neural network architecture - an analysis (original, theoretical): An attempt to attack and formalize classical models into neural network theoretic (unit-wise approach of neuronal unit) to classical models, hence gauging their capability.\nUnsolved problems in theoretical machine learning (original, review): A work in review of different interpretations and problems residing the current framework of machine learning.\nDifferential equations and machine learning - interpreting machine learning system using differential equations (original, theory): An attempt to express ML systems in terms of differential equations, just as the differential model.\nLLM cannot be AGI - the kind of paper.\nNeural network learning equals mathematical model structural approximation (original, theory, experiment).\nConcentration inequalities in theoretical machine learning for beginner.\nStructural addition in machine learning - an analysis.\nComponent and structural realization of large language model and why they are not intelligent - just to prove that LLM is not, well, intelligent and again, won’t ever be AGI.\nHallucination is bias-variance tradeoff - we just, well, connect it to them.\nVisualization of neural network operation and layer theoretic.\nTime-sensitive processing network - something that look like an operational system in the inner units of the neural network, so yeah.\nAlways running neural network. Mimicking a network to well, always run and is not static.\nVisualizing dynamics and bias-variance plus double descent.\nInformation theoretic interpretation of machine learning framework.\nRandomized neural network architecture on permutations (theory, experiment, original) - just a way to do such analysis.\nMultiNet - A new multidirectional structure of neural network formalism (original, experimentation) - just a generalization of what I observed of neural network structure in general. Will have to base on existing facility, can’t do anything else.\nTheoretical explanation for Neural Scaling Law (original, theoretical) - Just an attempt to solve the neural scaling law.\n\nFor now, they are short papers for machine learning. On physics, well.\n\nThe theory of Raman Spectroscopy (review, reference): On the theory of Raman spectroscopy on itself, different interpretation, history, approaches, and problems. That is it for now. More is in the PDF file itself, which is listed there for reasons."
+    "section": "Current works",
+    "text": "Current works\nCurrently, the work that I am working on is:\n\nNeural network documentation and sources (here). Progress is kind of slow, but is expected.\nNeuroscience documentation (knowledge base) project. (Currently the website html template is having issues, so I am putting that on hold for now).\nQuantum physics blog (for now the website is in preparation, but will use Hugo template so I have to familiarize myself with it).\nA paper on Raman spectroscopy and ML application on yogurt (organize in this sheet)."
+  },
+  {
+    "objectID": "publications.html#list-of-interesting-topics-on-holds",
+    "href": "publications.html#list-of-interesting-topics-on-holds",
+    "title": "",
+    "section": "List of interesting topics on holds",
+    "text": "List of interesting topics on holds\nFor now, here are some of the paper topics:\n\nDouble descent: a review (review, reference): A reference and review paper talking about double descent. Including effort to formalize the definition of it.\nInterpreting double descent in polynomial via density estimation (original, theory): A fairly light and theoretical paper on the toy model description of polynomial model and different interpretation.\nDouble descent on support vector machine and polynomial models on binary classification - an analysis (experimental, theory): A both theory and experimental paper.\nPINNs and double descent (experimental): An experimental on PINNs and how to identify double descent on it.\nClassical learning theory and future (original, review, experiments).\nA review of model structures in machine learning and theoretical machine learning (theoretical, review, reference): A reference paper on the concept of models in machine learning, their structures, flavour, consideration, and thereof.\nDifferent treatment of machine learning - an analysis (review, reference, original): A paper on the different treatment of machine learning, from different lens and scale, and how do they fit together (categorical machine learning for example).\nReuniting the neural network framework using partial category theory (original, theory): Using the proposed categorical machine learning or neural network to consider reuniting different architecture together under the same framework.\nOn the capacity and capability of neural networks (review, original): A paper analysing the capacity and capability of neural networks on various tasks and setting thereof, and so forth, considering different structures.\nMachine learning from a mathematical modelling view (review, original): Proposing a modelling theoretic, internal state interpretation to machine learning.\nThe analysis of statistical physics on machine learning (review, original): Setting up a review work on how statistical physics is related to machine learning, where is it failing and what constitute the failure.\nClassical model into neural network architecture - an analysis (original, theoretical): An attempt to attack and formalize classical models into neural network theoretic (unit-wise approach of neuronal unit) to classical models, hence gauging their capability.\nUnsolved problems in theoretical machine learning (original, review): A work in review of different interpretations and problems residing the current framework of machine learning.\nDifferential equations and machine learning - interpreting machine learning system using differential equations (original, theory): An attempt to express ML systems in terms of differential equations, just as the differential model.\nLLM cannot be AGI - the kind of paper.\nNeural network learning equals mathematical model structural approximation (original, theory, experiment).\nConcentration inequalities in theoretical machine learning for beginner.\nStructural addition in machine learning - an analysis.\nComponent and structural realization of large language model and why they are not intelligent - just to prove that LLM is not, well, intelligent and again, won’t ever be AGI.\nHallucination is bias-variance tradeoff - we just, well, connect it to them.\nVisualization of neural network operation and layer theoretic.\nTime-sensitive processing network - something that look like an operational system in the inner units of the neural network, so yeah.\nAlways running neural network. Mimicking a network to well, always run and is not static.\nVisualizing dynamics and bias-variance plus double descent.\nInformation theoretic interpretation of machine learning framework.\nRandomized neural network architecture on permutations (theory, experiment, original) - just a way to do such analysis.\nMultiNet - A new multidirectional structure of neural network formalism (original, experimentation) - just a generalization of what I observed of neural network structure in general. Will have to base on existing facility, can’t do anything else.\nTheoretical explanation for Neural Scaling Law (original, theoretical) - Just an attempt to solve the neural scaling law.\n\nFor now, they are short papers for machine learning. On physics, well.\n\nThe theory of Raman Spectroscopy (review, reference): On the theory of Raman spectroscopy on itself, different interpretation, history, approaches, and problems. Research page is this\n\nThat is it for now. More is in the PDF file itself, which is listed there for reasons."
   },
   {
     "objectID": "tutorial.html",
