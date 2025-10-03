@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Unattainable AGI and why it is not here</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3112566cf6937a9e7af9dd99ed816c1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ccde06ee1e90087255e28f4fe4ff3809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3112566cf6937a9e7af9dd99ed816c1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script type="text/javascript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-66708188-1', 'auto');
+
+ga('send', {
+  hitType: 'pageview',
+  'anonymizeIp': true,
+});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../assets/css/main.scss">
+<meta name="twitter:title" content="Unattainable AGI and why it is not here">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/content/images/favicon.ico">
+<meta name="twitter:site" content="@DevitoCodes">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/favicon.ico" alt="" class="navbar-logo light-content">
+    <img src="../images/favicon.ico" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorial.html"> 
+<span class="menu-text">Guidance</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../faq.html"> 
+<span class="menu-text">FAQ</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../citing.html"> 
+<span class="menu-text">References</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/Amane-Fujimiya">
+            Fujimiya Amane
+            </a>
+          </li>
+      </ul>
+    </div>
+    <a href="https://x.com/Fujimiya_Amane_" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/amane-fujimiya-731b52216/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/devitocodes/devitocodes.github.io/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="r15.ipynb" download="r15.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Unattainable AGI and why it is not here</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>For a long time, there exists the debate on whether the world is approaching the fundamental point of “Singularity”, as per the creation of an artificial general intelligence (AGI) in various forms, both in popular social phenomena and in research society. Just how much is this true?</p>
+<blockquote class="blockquote">
+<p>The research is in progress, so don’t ask me why (草)</p>
+</blockquote>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<p>Large Language Model, or LLM (<span class="citation" data-cites="vaswani2017attention">(<a href="#ref-vaswani2017attention" role="doc-biblioref">Vaswani et al. 2017</a>)</span>,<span class="citation" data-cites="devlin2019bert">(<a href="#ref-devlin2019bert" role="doc-biblioref">Devlin et al. 2019</a>)</span>,<span class="citation" data-cites="brown2020language">(<a href="#ref-brown2020language" role="doc-biblioref">Brown et al. 2020</a>)</span>,<span class="citation" data-cites="zhao2023llmsurvey">(<a href="#ref-zhao2023llmsurvey" role="doc-biblioref">Zhao et al. 2023</a>)</span>,<span class="citation" data-cites="zhao2024llmsurvey2">(<a href="#ref-zhao2024llmsurvey2" role="doc-biblioref">Zhao et al. 2024</a>)</span>,<span class="citation" data-cites="radford2019language">(<a href="#ref-radford2019language" role="doc-biblioref">Radford et al. 2019</a>)</span>,<span class="citation" data-cites="radford2018improving">(<a href="#ref-radford2018improving" role="doc-biblioref">Radford et al. 2018</a>)</span>,<span class="citation" data-cites="raffel2020exploring">(<a href="#ref-raffel2020exploring" role="doc-biblioref">Raffel et al. 2020</a>)</span>,<span class="citation" data-cites="touvron2023llama">(<a href="#ref-touvron2023llama" role="doc-biblioref">Touvron, Lavril, Izacard, Martinet, Lachaux, Lacroix, Rozière, Goyal, Hambro, Azhar, and others 2023</a>)</span>,<span class="citation" data-cites="touvron2023llama2">(<a href="#ref-touvron2023llama2" role="doc-biblioref">Touvron, Martin, et al. 2023</a>)</span>,<span class="citation" data-cites="chowdhery2022palm">(<a href="#ref-chowdhery2022palm" role="doc-biblioref">Aakanksha Chowdhery et al. 2022</a>)</span>,<span class="citation" data-cites="ouyang2022training">(<a href="#ref-ouyang2022training" role="doc-biblioref">Ouyang et al. 2022</a>)</span>,<span class="citation" data-cites="wei2022chain">(<a href="#ref-wei2022chain" role="doc-biblioref">Wei et al. 2022</a>)</span>,<span class="citation" data-cites="kaplan2020scaling">(<a href="#ref-kaplan2020scaling" role="doc-biblioref">Kaplan et al. 2020</a>)</span>,<span class="citation" data-cites="hoffmann2022training">(<a href="#ref-hoffmann2022training" role="doc-biblioref">Hoffmann et al. 2022</a>)</span>,<span class="citation" data-cites="bai2022constitutional">(<a href="#ref-bai2022constitutional" role="doc-biblioref">Bai et al. 2022</a>)</span>) is one of the most successful, most advanced, and most developed type of model in the current modern machine learning landscape, and of AI (Artificial Intelligence) research at large. Its success has not been lacking, and its reputation and widespread uses have been proved over time. The effect of LLM has been realized, and indeed has been changing the landscape of society in a very much difficult way. Latest model of such architecture, like <span class="citation" data-cites="openai_gpt5_2025">(<a href="#ref-openai_gpt5_2025" role="doc-biblioref">OpenAI 2025b</a>)</span>,<span class="citation" data-cites="wang2025capabilitiesgpt5multimodalmedical">(<a href="#ref-wang2025capabilitiesgpt5multimodalmedical" role="doc-biblioref">Wang et al. 2025</a>)</span>,<span class="citation" data-cites="openai_inside_gpt5_2025">(<a href="#ref-openai_inside_gpt5_2025" role="doc-biblioref">OpenAI 2025a</a>)</span>’s GPT-5, <span class="citation" data-cites="guo_deepseek_r1_2025">(<a href="#ref-guo_deepseek_r1_2025" role="doc-biblioref">Guo et al. 2025</a>)</span>,<span class="citation" data-cites="deepseek_hf_2025">(<a href="#ref-deepseek_hf_2025" role="doc-biblioref">DeepSeek AI / Hugging Face 2025</a>)</span>’s DeepSeek AI, <span class="citation" data-cites="anthropic_claude3_modelcard_2024">(<a href="#ref-anthropic_claude3_modelcard_2024" role="doc-biblioref">Anthropic 2024</a>)</span>,<span class="citation" data-cites="anthropic_tracing_thoughts_2025">(<a href="#ref-anthropic_tracing_thoughts_2025" role="doc-biblioref">Anthropic Research 2025</a>)</span>’s Claude AI, <span class="citation" data-cites="touvron_llama_2023">(<a href="#ref-touvron_llama_2023" role="doc-biblioref">Touvron, Lavril, Izacard, Martinet, Lachaux, Lacroix, Rozière, Goyal, Hambro, Azhar, Rodriguez, et al. 2023</a>)</span>’s LLaMA, <span class="citation" data-cites="chowdhery_palm_2022">(<a href="#ref-chowdhery_palm_2022" role="doc-biblioref">Amitabh Chowdhery et al. 2022</a>)</span>,<span class="citation" data-cites="anil_palm2_2023">(<a href="#ref-anil_palm2_2023" role="doc-biblioref">Anil et al. 2023</a>)</span>’s <em>PaLM / PaLM-2</em>, and <span class="citation" data-cites="jiang_mistral7b_2023">(<a href="#ref-jiang_mistral7b_2023" role="doc-biblioref">Jiang et al. 2023</a>)</span>,<span class="citation" data-cites="mistral_blog_2023">(<a href="#ref-mistral_blog_2023" role="doc-biblioref">Mistral AI 2023</a>)</span>’s Mistral (Mistral-7B), pushed this boundary further and further, and levelling up many tasks and purposes with AI system in practice, and further onward with techniques like <span class="citation" data-cites="wei2022chain">(<a href="#ref-wei2022chain" role="doc-biblioref">Wei et al. 2022</a>)</span>’s <em>Chain-of-Thought prompting</em>, <span class="citation" data-cites="kaplan2020scaling">(<a href="#ref-kaplan2020scaling" role="doc-biblioref">Kaplan et al. 2020</a>)</span>’s scaling law, and more (<span class="citation" data-cites="hoffmann2022training">(<a href="#ref-hoffmann2022training" role="doc-biblioref">Hoffmann et al. 2022</a>)</span>,<span class="citation" data-cites="bai2022constitutional">(<a href="#ref-bai2022constitutional" role="doc-biblioref">Bai et al. 2022</a>)</span>).</p>
+<p>However, with such development, come great expectation, great speculation, and also great hallucination. New development of the field of AI even earlier than paper on the Transformer neural network which fuelled the revolution of AI exposure, has gathered a group of people speculated about the further exponential growth of AI, almost to a degree of religious, about the topic of a <em>Singularity</em>, where AI will become <strong>Artificial General Intelligence</strong> (AGI). This is reflected in popular culture phenomena, speculation, researches, interpretation of reasoning behaviours and so on, for example, in <span class="citation" data-cites="barrat_our_final_invention_2013">(<a href="#ref-barrat_our_final_invention_2013" role="doc-biblioref">Barrat 2013</a>)</span>,<span class="citation" data-cites="birch_edge_of_sentience_2024">(<a href="#ref-birch_edge_of_sentience_2024" role="doc-biblioref">Birch 2024</a>)</span>,<span class="citation" data-cites="yudkowsky_soares_anyone_builds_2025">(<a href="#ref-yudkowsky_soares_anyone_builds_2025" role="doc-biblioref">Yudkowsky and Soares 2025</a>)</span>,<span class="citation" data-cites="hao_empire_of_ai_2025">(<a href="#ref-hao_empire_of_ai_2025" role="doc-biblioref">Hao 2025</a>)</span>,<span class="citation" data-cites="bostrom_superintelligence_2014">(<a href="#ref-bostrom_superintelligence_2014" role="doc-biblioref">Bostrom 2014</a>)</span>, and more broadly on LLM in specific, <span class="citation" data-cites="mumuni_survey_llms_for_agi_2025">(<a href="#ref-mumuni_survey_llms_for_agi_2025" role="doc-biblioref">Mumuni and Mumuni 2025</a>)</span>,<span class="citation" data-cites="shang_ai_native_memory_2024">(<a href="#ref-shang_ai_native_memory_2024" role="doc-biblioref">Shang et al. 2024</a>)</span>,<span class="citation" data-cites="llm_cognitive_capabilities_evidence_2024">(<a href="#ref-llm_cognitive_capabilities_evidence_2024" role="doc-biblioref">David Ilić 2024</a>)</span>,<span class="citation" data-cites="goertzel_generative_ai_vs_agi_2023">(<a href="#ref-goertzel_generative_ai_vs_agi_2023" role="doc-biblioref">Goertzel 2023</a>)</span>,<span class="citation" data-cites="feng2024how">(<a href="#ref-feng2024how" role="doc-biblioref">Feng et al. 2024</a>)</span>,<span class="citation" data-cites="llms_assessment_for_singularity_2025">(<a href="#ref-llms_assessment_for_singularity_2025" role="doc-biblioref">Ryunosuke Ishizaki 2025</a>)</span> and <span class="citation" data-cites="cui_risk_taxonomy_mitigation_2024">(<a href="#ref-cui_risk_taxonomy_mitigation_2024" role="doc-biblioref">Cui et al. 2024</a>)</span>. The claim is clear - we are pushing toward the age of AGI, and perhaps sooner or later, reach the state of Artificial Superintelligence (ASI) of which cited in popular culture as the cultivation point of the Singularity - the shift of society toward a society of abundance, post-scarcity state. Most proponents point to LLM for such advancement, as it is one of the most widespread success and accessible form of interaction with AI systems on large scale. Pushbacks against such movement, including such as <span class="citation" data-cites="friedman2024inference">(<a href="#ref-friedman2024inference" role="doc-biblioref">Friedman 2024</a>)</span>,<span class="citation" data-cites="lesswrong2024parrot">(<a href="#ref-lesswrong2024parrot" role="doc-biblioref">Anonymous 2024c</a>)</span>,<span class="citation" data-cites="bender2021dangers">(<a href="#ref-bender2021dangers" role="doc-biblioref">Bender et al. 2021</a>)</span>,<span class="citation" data-cites="baan2021slodderwetenschap">(<a href="#ref-baan2021slodderwetenschap" role="doc-biblioref">Baan 2021</a>)</span>,<span class="citation" data-cites="towardsai2023parrots">(<a href="#ref-towardsai2023parrots" role="doc-biblioref">Anonymous 2023</a>)</span> on the “Stochastic Parrot Hypothesis”, <span class="citation" data-cites="njii2024agi">(<a href="#ref-njii2024agi" role="doc-biblioref">Anonymous 2024a</a>)</span> questioned of LLM path to AGI, the reverend <span class="citation" data-cites="alignmentforum2025">(<a href="#ref-alignmentforum2025" role="doc-biblioref">Forum 2025</a>)</span> post itself, <span class="citation" data-cites="limgen2024">(<a href="#ref-limgen2024" role="doc-biblioref">Anonymous 2024b</a>)</span>,<span class="citation" data-cites="limitgen2025">(<a href="#ref-limitgen2025" role="doc-biblioref">Anonymous 2025</a>)</span> on generating suggestive limitation of research paper, <span class="citation" data-cites="cacm2025knockout">(<a href="#ref-cacm2025knockout" role="doc-biblioref">Marcus 2025</a>)</span>,<span class="citation" data-cites="marcus2023elegant">(<a href="#ref-marcus2023elegant" role="doc-biblioref">Marcus 2023</a>)</span>‘s’ critique on generative AI on world models and failure of LLM, <span class="citation" data-cites="llm2024primer">Sandra Johnson (<a href="#ref-llm2024primer" role="doc-biblioref">2024</a>)</span> on limitation of LLM, similarly <span class="citation" data-cites="zhang2025lllms">(<a href="#ref-zhang2025lllms" role="doc-biblioref">Zhang et al. 2025</a>)</span>, mathematics critique in <span class="citation" data-cites="mirzadeh2024gsm">(<a href="#ref-mirzadeh2024gsm" role="doc-biblioref">Mirzadeh et al. 2024</a>)</span>, and more. However, the generally public, and more so of the positivity of the inner market on AI focus on the development and increment of larger models toward such goal. It is not too offset to hear the phrase “AGI will be in <span class="math inline">\(X\)</span> days/month/year”, as much as it is a social phenomena even in small or large circle. Objectively, such positivity is not without basis. Furthermore, it is rather with certain amount of irony that the research made use of AI itself, for reference taking purposes.</p>
+<p>Nevertheless, a critical task can be given out of such argument and thorough development of the current debate. What can then be extrapolated from the ongoing dilemma? What has to do with the architecture, the consideration about AGI that is now turned into the debate of will LLM be AGI? How is our understanding of the concept of AI, AGI, and ASI in general? And of a sense, what will provide us a pathway toward such goal?</p>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-anil_palm2_2023" class="csl-entry" role="listitem">
+Anil, R. et al. 2023. <span>“PaLM 2 Technical Report.”</span> arXiv preprint arXiv:2305.10403. <a href="https://arxiv.org/abs/2305.10403">https://arxiv.org/abs/2305.10403</a>.
+</div>
+<div id="ref-towardsai2023parrots" class="csl-entry" role="listitem">
+Anonymous. 2023. <span>“Stochastic Parrots: A Novel Look at Large Language Models and Their Limitations.”</span> Towards AI. <a href="https://towardsai.net/p/machine-learning/stochastic-parrots-a-novel-look-at-large-language-models-and-their-limitations">https://towardsai.net/p/machine-learning/stochastic-parrots-a-novel-look-at-large-language-models-and-their-limitations</a>.
+</div>
+<div id="ref-njii2024agi" class="csl-entry" role="listitem">
+———. 2024a. <span>“How Close Is AGI Actually? Why LLMs Alone Will Not Get Us to AGI.”</span> New Jersey Innovation Institute. <a href="https://www.njii.com/2024/07/why-llms-alone-will-not-get-us-to-agi/">https://www.njii.com/2024/07/why-llms-alone-will-not-get-us-to-agi/</a>.
+</div>
+<div id="ref-limgen2024" class="csl-entry" role="listitem">
+———. 2024b. <span>“LimGen: Probing the LLMs for Generating Suggestive Limitations of Research Papers.”</span> <em>arXiv Preprint arXiv:2403.15529</em>. <a href="https://arxiv.org/abs/2403.15529">https://arxiv.org/abs/2403.15529</a>.
+</div>
+<div id="ref-lesswrong2024parrot" class="csl-entry" role="listitem">
+———. 2024c. <span>“The Stochastic Parrot Hypothesis Is Debatable for the Last Generation of LLMs.”</span> <a href="https://www.lesswrong.com/posts/HxRjHq3QG8vcYy4yy/the-stochastic-parrot-hypothesis-is-debatable-for-the-last">https://www.lesswrong.com/posts/HxRjHq3QG8vcYy4yy/the-stochastic-parrot-hypothesis-is-debatable-for-the-last</a>.
+</div>
+<div id="ref-limitgen2025" class="csl-entry" role="listitem">
+———. 2025. <span>“Can LLMs Identify Critical Limitations Within Scientific Research? A Systematic Evaluation on AI Research Papers.”</span> <em>arXiv Preprint arXiv:2507.02694</em>. <a href="https://arxiv.org/abs/2507.02694">https://arxiv.org/abs/2507.02694</a>.
+</div>
+<div id="ref-anthropic_claude3_modelcard_2024" class="csl-entry" role="listitem">
+Anthropic. 2024. <span>“The Claude 3 Model Family: Opus, Sonnet, Haiku (Model Card).”</span> <a href="https://www-cdn.anthropic.com/.../Model_Card_Claude_3.pdf" class="uri">https://www-cdn.anthropic.com/.../Model_Card_Claude_3.pdf</a>.
+</div>
+<div id="ref-anthropic_tracing_thoughts_2025" class="csl-entry" role="listitem">
+Anthropic Research. 2025. <span>“Tracing the Thoughts of a Large Language Model.”</span> <a href="https://www.anthropic.com/research/tracing-thoughts-language-model" class="uri">https://www.anthropic.com/research/tracing-thoughts-language-model</a>.
+</div>
+<div id="ref-baan2021slodderwetenschap" class="csl-entry" role="listitem">
+Baan, Joris. 2021. <span>“The Slodderwetenschap (Sloppy Science) of Stochastic Parrots – a Plea for Science to NOT Take the Route Advocated by Gebru and Bender.”</span> <em>arXiv Preprint arXiv:2101.10098</em>. <a href="https://arxiv.org/abs/2101.10098">https://arxiv.org/abs/2101.10098</a>.
+</div>
+<div id="ref-bai2022constitutional" class="csl-entry" role="listitem">
+Bai, Yuntao, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, et al. 2022. <span>“Constitutional AI: Harmlessness from AI Feedback.”</span> <em>arXiv Preprint arXiv:2212.08073</em>. <a href="https://arxiv.org/abs/2212.08073">https://arxiv.org/abs/2212.08073</a>.
+</div>
+<div id="ref-barrat_our_final_invention_2013" class="csl-entry" role="listitem">
+Barrat, James. 2013. <em>Our Final Invention: Artificial Intelligence and the End of the Human Era</em>. Thomas Dunne Books.
+</div>
+<div id="ref-bender2021dangers" class="csl-entry" role="listitem">
+Bender, Emily M, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. <span>“On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?”</span> In <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</em>, 610–23. ACM. <a href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
+</div>
+<div id="ref-birch_edge_of_sentience_2024" class="csl-entry" role="listitem">
+Birch, Jonathan. 2024. <em>The Edge of Sentience: Risk and Precaution in Humans, Other Animals, and AI</em>. Oxford University Press.
+</div>
+<div id="ref-bostrom_superintelligence_2014" class="csl-entry" role="listitem">
+Bostrom, Nick. 2014. <em>Superintelligence: Paths, Dangers, Strategies</em>. Oxford University Press.
+</div>
+<div id="ref-brown2020language" class="csl-entry" role="listitem">
+Brown, Tom, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. 2020. <span>“Language Models Are Few-Shot Learners.”</span> In <em>Advances in Neural Information Processing Systems</em>, 33:1877–1901. Neural Information Processing Systems. <a href="https://arxiv.org/abs/2005.14165">https://arxiv.org/abs/2005.14165</a>.
+</div>
+<div id="ref-chowdhery2022palm" class="csl-entry" role="listitem">
+Chowdhery, Aakanksha, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, et al. 2022. <span>“PaLM: Scaling Language Modeling with Pathways.”</span> <em>arXiv Preprint arXiv:2204.02311</em>. <a href="https://arxiv.org/abs/2204.02311">https://arxiv.org/abs/2204.02311</a>.
+</div>
+<div id="ref-chowdhery_palm_2022" class="csl-entry" role="listitem">
+Chowdhery, Amitabh et al. 2022. <span>“PaLM: Scaling Language Modeling with Pathways.”</span> In. arXiv preprint arXiv:2204.02311. <a href="https://arxiv.org/abs/2204.02311">https://arxiv.org/abs/2204.02311</a>.
+</div>
+<div id="ref-cui_risk_taxonomy_mitigation_2024" class="csl-entry" role="listitem">
+Cui, Tianyu, Yanling Wang, Chuanpu Fu, Yong Xiao, Sijia Li, Xinhao Deng, Yunpeng Liu, et al. 2024. <span>“Risk Taxonomy, Mitigation, and Assessment Benchmarks of Large Language Model Systems.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/abs/2401.05778">https://arxiv.org/abs/2401.05778</a>.
+</div>
+<div id="ref-llm_cognitive_capabilities_evidence_2024" class="csl-entry" role="listitem">
+David Ilić, Gilles E. Gignac. 2024. <span>“Evidence of Interrelated Cognitive-Like Capabilities in Large Language Models: Indications of Artificial General Intelligence or Achievement?”</span> <em>Intelligence</em> 106: 101858. <a href="https://doi.org/10.1016/j.intell.2024.101858">https://doi.org/10.1016/j.intell.2024.101858</a>.
+</div>
+<div id="ref-deepseek_hf_2025" class="csl-entry" role="listitem">
+DeepSeek AI / Hugging Face. 2025. <span>“Deepseek-Ai/DeepSeek-R1 (Model Card).”</span> <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" class="uri">https://huggingface.co/deepseek-ai/DeepSeek-R1</a>.
+</div>
+<div id="ref-devlin2019bert" class="csl-entry" role="listitem">
+Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. <span>“BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding.”</span> In <em>Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</em>, 4171–86. Association for Computational Linguistics. <a href="https://arxiv.org/abs/1810.04805">https://arxiv.org/abs/1810.04805</a>.
+</div>
+<div id="ref-feng2024how" class="csl-entry" role="listitem">
+Feng, Tao, Chuanyang Jin, Jingyu Liu, Kunlun Zhu, Haoqin Tu, Zirui Cheng, Guanyu Lin, and Jiaxuan You. 2024. <span>“How Far Are We from AGI: Are LLMs All We Need?”</span> <em>arXiv Preprint arXiv:2405.10313</em>, May. <a href="https://arxiv.org/abs/2405.10313">https://arxiv.org/abs/2405.10313</a>.
+</div>
+<div id="ref-alignmentforum2025" class="csl-entry" role="listitem">
+Forum, AI Alignment. 2025. <span>“Beware General Claims about "Generalizable Reasoning Capabilities" (of Modern AI Systems).”</span> AI Alignment Forum. <a href="https://www.alignmentforum.org/posts/5uw26uDdFbFQgKzih/beware-general-claims-about-generalizable-reasoning">https://www.alignmentforum.org/posts/5uw26uDdFbFQgKzih/beware-general-claims-about-generalizable-reasoning</a>.
+</div>
+<div id="ref-friedman2024inference" class="csl-entry" role="listitem">
+Friedman, Dave. 2024. <span>“Understanding Inference and the "Stochastic Parrot" in Large Language Models.”</span> Personal blog (Substack). <a href="https://davefriedman.substack.com/p/understanding-inference-and-the-stochastic">https://davefriedman.substack.com/p/understanding-inference-and-the-stochastic</a>.
+</div>
+<div id="ref-goertzel_generative_ai_vs_agi_2023" class="csl-entry" role="listitem">
+Goertzel, Ben. 2023. <span>“Generative AI Vs. AGI: The Cognitive Strengths and Weaknesses of Modern LLMs.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/abs/2309.10371">https://arxiv.org/abs/2309.10371</a>.
+</div>
+<div id="ref-guo_deepseek_r1_2025" class="csl-entry" role="listitem">
+Guo, D. et al. 2025. <span>“DeepSeek-R1: Incentivizing Reasoning Capability in LLMs.”</span> arXiv preprint arXiv:2501.12948. <a href="https://arxiv.org/abs/2501.12948">https://arxiv.org/abs/2501.12948</a>.
+</div>
+<div id="ref-hao_empire_of_ai_2025" class="csl-entry" role="listitem">
+Hao, Karen. 2025. <em>Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI</em>. Penguin Press.
+</div>
+<div id="ref-hoffmann2022training" class="csl-entry" role="listitem">
+Hoffmann, Jordan, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor Cai, Eliza Rutherford, Diego de Las Casas, et al. 2022. <span>“Training Compute-Optimal Large Language Models.”</span> <em>arXiv Preprint arXiv:2203.15556</em>. <a href="https://arxiv.org/abs/2203.15556">https://arxiv.org/abs/2203.15556</a>.
+</div>
+<div id="ref-jiang_mistral7b_2023" class="csl-entry" role="listitem">
+Jiang, A. Q. et al. 2023. <span>“Mistral 7B.”</span> arXiv preprint arXiv:2310.06825. <a href="https://arxiv.org/abs/2310.06825">https://arxiv.org/abs/2310.06825</a>.
+</div>
+<div id="ref-kaplan2020scaling" class="csl-entry" role="listitem">
+Kaplan, Jared, Sam McCandlish, Tom Henighan, Tom B Brown, Benjamin Chess, Rewon Child, Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei. 2020. <span>“Scaling Laws for Neural Language Models.”</span> <em>arXiv Preprint arXiv:2001.08361</em>. <a href="https://arxiv.org/abs/2001.08361">https://arxiv.org/abs/2001.08361</a>.
+</div>
+<div id="ref-marcus2023elegant" class="csl-entry" role="listitem">
+Marcus, Gary. 2023. <span>“Elegant and Powerful New Result That Seriously Undermines Large Language Models.”</span> Marcus on AI (Substack). <a href="https://garymarcus.substack.com/p/elegant-and-powerful-new-result-that">https://garymarcus.substack.com/p/elegant-and-powerful-new-result-that</a>.
+</div>
+<div id="ref-cacm2025knockout" class="csl-entry" role="listitem">
+———. 2025. <span>“A Knockout Blow for LLMs?”</span> <em>Communications of the ACM</em>. <a href="https://cacm.acm.org/blogcacm/a-knockout-blow-for-llms/">https://cacm.acm.org/blogcacm/a-knockout-blow-for-llms/</a>.
+</div>
+<div id="ref-mirzadeh2024gsm" class="csl-entry" role="listitem">
+Mirzadeh, Iman, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and Mehrdad Farajtabar. 2024. <span>“GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models.”</span> <em>arXiv Preprint arXiv:2410.05229</em>. <a href="https://arxiv.org/abs/2410.05229">https://arxiv.org/abs/2410.05229</a>.
+</div>
+<div id="ref-mistral_blog_2023" class="csl-entry" role="listitem">
+Mistral AI. 2023. <span>“Announcing Mistral 7B.”</span> <a href="https://mistral.ai/news/announcing-mistral-7b" class="uri">https://mistral.ai/news/announcing-mistral-7b</a>.
+</div>
+<div id="ref-mumuni_survey_llms_for_agi_2025" class="csl-entry" role="listitem">
+Mumuni, Alhassan, and Fuseini Mumuni. 2025. <span>“Large Language Models for Artificial General Intelligence: A Survey of Foundational Principles and Approaches.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/abs/2501.03151">https://arxiv.org/abs/2501.03151</a>.
+</div>
+<div id="ref-openai_inside_gpt5_2025" class="csl-entry" role="listitem">
+OpenAI. 2025a. <span>“Inside GPT-5 for Work.”</span> <a href="https://cdn.openai.com/pdf/inside-gpt-5-for-work.pdf" class="uri">https://cdn.openai.com/pdf/inside-gpt-5-for-work.pdf</a>.
+</div>
+<div id="ref-openai_gpt5_2025" class="csl-entry" role="listitem">
+———. 2025b. <span>“Introducing GPT-5.”</span> <a href="https://openai.com/gpt-5/" class="uri">https://openai.com/gpt-5/</a>.
+</div>
+<div id="ref-ouyang2022training" class="csl-entry" role="listitem">
+Ouyang, Long, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, et al. 2022. <span>“Training Language Models to Follow Instructions with Human Feedback.”</span> <em>Advances in Neural Information Processing Systems</em> 35: 27730–44. <a href="https://arxiv.org/abs/2203.02155">https://arxiv.org/abs/2203.02155</a>.
+</div>
+<div id="ref-radford2018improving" class="csl-entry" role="listitem">
+Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. <span>“Improving Language Understanding by Generative Pre-Training.”</span> <em>OpenAI Blog</em>. <a href="https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf">https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf</a>.
+</div>
+<div id="ref-radford2019language" class="csl-entry" role="listitem">
+Radford, Alec, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019. <span>“Language Models Are Unsupervised Multitask Learners.”</span> <em>OpenAI Blog</em> 1 (8): 9. <a href="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf</a>.
+</div>
+<div id="ref-raffel2020exploring" class="csl-entry" role="listitem">
+Raffel, Colin, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. <span>“Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer.”</span> <em>Journal of Machine Learning Research</em> 21 (140): 1–67. <a href="https://arxiv.org/abs/1910.10683">https://arxiv.org/abs/1910.10683</a>.
+</div>
+<div id="ref-llms_assessment_for_singularity_2025" class="csl-entry" role="listitem">
+Ryunosuke Ishizaki, Mahito Sugiyama. 2025. <span>“Large Language Models: Assessment for Singularity.”</span> <em>AI &amp; Society</em>. <a href="https://link.springer.com/article/10.1007/s00146-025-02271-4">https://link.springer.com/article/10.1007/s00146-025-02271-4</a>.
+</div>
+<div id="ref-llm2024primer" class="csl-entry" role="listitem">
+Sandra Johnson, David Hyland-Wood. 2024. <span>“A Primer on Large Language Models and Their Limitations.”</span> <em>arXiv Preprint arXiv:2412.04503</em>. <a href="https://arxiv.org/abs/2412.04503">https://arxiv.org/abs/2412.04503</a>.
+</div>
+<div id="ref-shang_ai_native_memory_2024" class="csl-entry" role="listitem">
+Shang, Jingbo, Zai Zheng, Jiale Wei, Xiang Ying, Felix Tao, and Mindverse Team. 2024. <span>“AI-Native Memory: A Pathway from LLMs Towards AGI.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/abs/2406.18312">https://arxiv.org/abs/2406.18312</a>.
+</div>
+<div id="ref-touvron2023llama" class="csl-entry" role="listitem">
+Touvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, and others. 2023. <span>“LLaMA: Open and Efficient Foundation Language Models.”</span> <em>arXiv Preprint arXiv:2302.13971</em>. <a href="https://arxiv.org/abs/2302.13971">https://arxiv.org/abs/2302.13971</a>.
+</div>
+<div id="ref-touvron_llama_2023" class="csl-entry" role="listitem">
+Touvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurélien Rodriguez, et al. 2023. <span>“LLaMA: Open and Efficient Foundation Language Models.”</span> <em>arXiv Preprint arXiv:2302.13971</em>. <a href="https://arxiv.org/abs/2302.13971">https://arxiv.org/abs/2302.13971</a>.
+</div>
+<div id="ref-touvron2023llama2" class="csl-entry" role="listitem">
+Touvron, Hugo, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, et al. 2023. <span>“Llama 2: Open Foundation and Fine-Tuned Chat Models.”</span> <em>arXiv Preprint arXiv:2307.09288</em>. <a href="https://arxiv.org/abs/2307.09288">https://arxiv.org/abs/2307.09288</a>.
+</div>
+<div id="ref-vaswani2017attention" class="csl-entry" role="listitem">
+Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. <span>“Attention Is All You Need.”</span> In <em>Advances in Neural Information Processing Systems</em>, 30:5998–6008. Neural Information Processing Systems. <a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a>.
+</div>
+<div id="ref-wang2025capabilitiesgpt5multimodalmedical" class="csl-entry" role="listitem">
+Wang, Shansong, Mingzhe Hu, Qiang Li, Mojtaba Safari, and Xiaofeng Yang. 2025. <span>“Capabilities of GPT-5 on Multimodal Medical Reasoning.”</span> <a href="https://arxiv.org/abs/2508.08224">https://arxiv.org/abs/2508.08224</a>.
+</div>
+<div id="ref-wei2022chain" class="csl-entry" role="listitem">
+Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al. 2022. <span>“Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.”</span> <em>Advances in Neural Information Processing Systems</em> 35: 24824–37. <a href="https://arxiv.org/abs/2201.11903">https://arxiv.org/abs/2201.11903</a>.
+</div>
+<div id="ref-yudkowsky_soares_anyone_builds_2025" class="csl-entry" role="listitem">
+Yudkowsky, Eliezer, and Nate Soares. 2025. <em>If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All</em>. Hachette Book Group.
+</div>
+<div id="ref-zhang2025lllms" class="csl-entry" role="listitem">
+Zhang, Yijun et al. 2025. <span>“LLLMs: A Data-Driven Survey of Evolving Research on Limitations of Large Language Models.”</span> <em>arXiv Preprint arXiv:2505.19240</em>, May. <a href="https://arxiv.org/abs/2505.19240">https://arxiv.org/abs/2505.19240</a>.
+</div>
+<div id="ref-zhao2024llmsurvey2" class="csl-entry" role="listitem">
+Zhao, Wayne Xin et al. 2024. <span>“Large Language Models: A Survey.”</span> <em>arXiv Preprint arXiv:2402.06196</em>. <a href="https://arxiv.org/abs/2402.06196">https://arxiv.org/abs/2402.06196</a>.
+</div>
+<div id="ref-zhao2023llmsurvey" class="csl-entry" role="listitem">
+Zhao, Wayne Xin, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, et al. 2023. <span>“A Survey of Large Language Models.”</span> <em>arXiv Preprint arXiv:2303.18223</em>. <a href="https://arxiv.org/abs/2303.18223">https://arxiv.org/abs/2303.18223</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Amane-Fujimiya\.github\.io\/Research\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ 2025 Copyright (c) Bui Gia Khanh (Fujimiya Amane) and others
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/devitocodes/devitocodes.github.io/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/Fujimiya_Amane_">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Amane-Fujimiya">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

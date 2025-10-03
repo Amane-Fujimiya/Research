@@ -1,0 +1,34 @@
+---
+layout: default
+---
+The research on this site is of **the Theory of Raman Spectroscopy**. Participant in such regard is [Duong Ngoc Khoa](https://www.linkedin.com/in/duong-khoa-a77592378/) and Yogesh Verma (a particular person we met during previous ASC 2025). The sheet for organization is [this one](https://docs.google.com/spreadsheets/d/14don5MGLX5CL_e5oIRB2I7fQZSY7DnCQzyp1um-YCOs/edit?usp=sharing). `Github` site will be delivered together in the long term.
+
+## Planning
+
+It is then we have to elaborate on explaining what we are going to do within the confinement of the topic by itself. Originally, the idea comes from [my own blog documentation](https://amane-fujimiya.github.io/essays/posts/essay_1_raman.html) over here of the same expository analysis toward Raman Spectroscopy. So most of them will be there, and it will not be so particularly hard to figure out what to do in such research. The goal of the research, nevertheless, is to gain a *comprehensive framework and outlook* toward the problem of Raman spectroscopy, what theories support and explain it in what way, caveat, concepts that is used in analysing Raman spectroscopy, what type of differences between classical and quantum mechanical treatments in vibrational infrared range, and so on so forth. This all stems from the hardship in delivering and targeting the problem itself during the process of writing that essay, so to speak. 
+
+## What is Raman spectroscopy? 
+
+> According to the traditional view of the creation, it was on the first day that light was separated. Quite soon after, our forebears developed an appetite for knowledge which their progeny have never lost. However, it is only relatively recently that they discovered that, if light is reunited fleetingly with matter and then scattered again, it carries with it detailed information – albeit in code – about the structure of matter. It is the purpose of this book to provide the means for deciphering the information carried by the scattered light. (Claude Monet)
+
+In the same spirit, Raman scattering is the interaction resultant of photon interaction with matters, in its own sense, and of its own length of range. Predictably, redirection and changes of frequency of incident lights propagating through the medium. The scattering effect is **elastic** if frequency is constant, but **inelastic** if it varies. 
+
+The word *spectroscopy* indicates utilization of electromagnetic radiation, when interaction with atoms and molecules. Their 'after effect' varies, for example, being induced absorption, spontaneous emission, induced emission. Some of the more direct descriptions includes luminescence and fluorescence, scattering, and reflections. Of all, the typical interest is based on the event of **scattering**.
+
+For a *scattering coefficient* $k_{s}$, the intensity of light of *wavelength* $\lambda$ after passing through a medium of thickness $L$, $I(\lambda)$, may be given by 
+$$
+I(\lambda)=I_{0}(\lambda)\exp{(-k_{s}L)}
+$$
+where $I_{0}(\lambda)$ is the intensity of light entering, and $k_{s}L$ is the **optical depth**, denoted $\tau$. When both scattering and absorption occur, the overall extinction can be defined as $k_{e}=k_{s}+k_{a}$ for absorption coefficient $k_{a}$. Extinction (or attenuation) is **the sum of scattering and absorption**, so it represents. total effect of medium on radiation passing the medium. The intensity is then can be found again, using the *Beer-Lambert law* as above: 
+$$
+I(\lambda)=I_{0}(\lambda)\exp(-k_{e}L)
+$$
+
+![Illustration of a very rundown, average spectroscopic system.](img/r29/Pasted%20image%2020241113150544.png)
+
+Even with some of its drawback, characteristic scattering is less susceptible to the environment (*fluorescence spectroscopy*), spectrum is easier to decodes (*IR spectroscopy*), somewhat easier to set up and maintain (*reflection-absorption spectroscopy*), and others.
+
+## The problem
+
+The main problem concerned with this is that we have *no conclusive, cohesive picture* about the general theory of Raman scattering, spectroscopy, or even vibrational spectroscopy - the type of spectroscopy that Raman is based on, as of date. It is wise to note that since its conception by C. V. Raman, the theory can be abhorrently and arrogantly explained by classical physics, through a variety of ideas and layers, up to quantum physics of quantized phonon interaction between matters and so on. Nevertheless, it remains true, and rings true of its purpose, that there exists no cohesive picture, or a partially clear one that clears out the historical interpretation, models, and different approach leading to said problem. That is what the research is about. We note that depends on the timescale of the project, it might, or might not be *exhaustive*. Nevertheless, it is fair to say we still want at least a preliminary picture in general, of the topic itself. 
+

@@ -50,7 +50,7 @@ website:
       - file: tutorial.qmd
         text: "Guidance"
       - text: "FAQ"
-        href: FAQ.qmd
+        href: faq.qmd
       - file: publications.qmd
         text: "Research"
       - file: citing.qmd
@@ -58,30 +58,6 @@ website:
       - file: contact.qmd
         text: "Contact"
   
-  sidebar:
-    - id: tuto
-      style: "floating"
-      title: "Tutorials"
-      collapse-level: 1
-      contents:
-          - section: Tutorials
-            href: tutorials.qmd
-            contents:
-              - section: "User API"
-                contents: "examples/userapi/*.ipynb"
-              - section: "Compiler"
-                contents: "examples/compiler/*.ipynb"
-              - section: "Performance tips"
-                contents: "examples/performance/*.ipynb"
-              - section: "Seismic modeling and inversion"
-                contents:
-                  - auto: "examples/seismic/tutorials/*.ipynb"
-                  - auto: "examples/seismic/self_adjoint/*.ipynb"
-                  - "examples/seismic/acoustic/accuracy.ipynb"
-              - section: "CFD"
-                contents: "examples/cfd/*.ipynb"
-              - section: "Finance"
-                contents: "examples/finance/*.ipynb"
 
 format:
   html:

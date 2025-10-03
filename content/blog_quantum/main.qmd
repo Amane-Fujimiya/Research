@@ -1,0 +1,23 @@
+---
+layout: default
+title: The quantum mechanical blog
+listing:
+    date-format: iso
+    contents: posts
+---
+
+This is the main form of the blog format that I will use for handling different outlook and outcomes etc about the topic itself. The main lead of this blog is one of my senior (please provide me with professional linking for you please), a classmate in college of mine, and indeed, myself. The sheet planning is [this sheet](https://docs.google.com/spreadsheets/d/1rkT5r5JMc_Kwekp8VZGqlh9Tk6ibc9qIbDP7xQyi6fg/edit?usp=sharing), and hence other contents are also presented. The main repository for this blog is [still here](https://github.com/Amane-Fujimiya/Research), though the path to this particular site would be: 
+```powershell
+cd /content/blog_quantum/main.qmd
+cd /content/blog_quamtum/posts/**.qmd
+```
+or any `**.qmd` in particular of the folder. Add file to `/posts` folder then will list it in this particular page. There exists two formats for this blog post. One is the `pdf` format, which is usually of $\LaTeX$ format itself, hence a document. The other one is blog post, which is reserved and organized in `/posts` folder, as you can see. Every `.qmd` file of blog post in such folder is recommended (and thoughtfully so) to have the following as the preamble. 
+```yaml
+layout: default
+title: The quantum mechanical blog
+```
+as per minimum required. Further information and metadata customization of local file can be founded on [Quarto official documentation](https://quarto.org/docs/guide/). To modify the blog, you require `git` for operations, and hence `github` for updates. This goes without saying, nonetheless. If you want in-display `pdf`, please create a blog post on itself, and then 
+```markdown
+![title of the document](link to the document - can be either hyperlink or file link)
+```
+as required. For now, good luck. 

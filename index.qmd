@@ -25,4 +25,4 @@ Most of them are theoretical, some are practical in the sense of model evaluatio
 
 ## Current collaborator
 
-Right, now my collaborators are [Daud Shahbaz](https://www.linkedin.com/in/daudshahbaz/), [Duong Ngoc Khoa](https://www.linkedin.com/in/duong-khoa-a77592378/), and a few more people. If you want to collaborate, please look into the [catalogue](publications.qmd) for some of my proposals and already in progress works. 
+Right, now my collaborators are [Daud Shahbaz](https://www.linkedin.com/in/daudshahbaz/), [Duong Ngoc Khoa](https://www.linkedin.com/in/duong-khoa-a77592378/), and a few more people. If you want to collaborate, please look into the [catalogue](publications.qmd) for some of my proposals and already in progress works. Though I doubt at this stage there can be anything to offer. 
