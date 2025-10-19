@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>r29</title>
+<title>Zotero integration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,37 +86,13 @@ ga('send', {
 });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../assets/css/main.scss">
+<meta name="twitter:title" content="Zotero integration">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/content/images/favicon.ico">
+<meta name="twitter:site" content="@DevitoCodes">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -353,56 +329,35 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#planning" id="toc-planning" class="nav-link active" data-scroll-target="#planning">Planning</a></li>
-  <li><a href="#what-is-raman-spectroscopy" id="toc-what-is-raman-spectroscopy" class="nav-link" data-scroll-target="#what-is-raman-spectroscopy">What is Raman spectroscopy?</a></li>
-  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/devitocodes/devitocodes.github.io/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="r29.ipynb" download="r29.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
-    </div>
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="r29_zotero.ipynb" download="r29_zotero.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
 
-
-
-
-<p>The research on this site is of <strong>the Theory of Raman Spectroscopy</strong>. Participant in such regard is <a href="https://www.linkedin.com/in/duong-khoa-a77592378/">Duong Ngoc Khoa</a> and Yogesh Verma (a particular person we met during previous ASC 2025). The sheet for organization is <a href="https://docs.google.com/spreadsheets/d/14don5MGLX5CL_e5oIRB2I7fQZSY7DnCQzyp1um-YCOs/edit?usp=sharing">this one</a>. <code>Github</code> site will be delivered together in the long term.</p>
-<section id="planning" class="level2">
-<h2 class="anchored" data-anchor-id="planning">Planning</h2>
-<p>It is then we have to elaborate on explaining what we are going to do within the confinement of the topic by itself. Originally, the idea comes from <a href="https://amane-fujimiya.github.io/essays/posts/essay_1_raman.html">my own blog documentation</a> over here of the same expository analysis toward Raman Spectroscopy. So most of them will be there, and it will not be so particularly hard to figure out what to do in such research. The goal of the research, nevertheless, is to gain a <em>comprehensive framework and outlook</em> toward the problem of Raman spectroscopy, what theories support and explain it in what way, caveat, concepts that is used in analysing Raman spectroscopy, what type of differences between classical and quantum mechanical treatments in vibrational infrared range, and so on so forth. This all stems from the hardship in delivering and targeting the problem itself during the process of writing that essay, so to speak.</p>
-</section>
-<section id="what-is-raman-spectroscopy" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-raman-spectroscopy">What is Raman spectroscopy?</h2>
-<blockquote class="blockquote">
-<p>According to the traditional view of the creation, it was on the first day that light was separated. Quite soon after, our forebears developed an appetite for knowledge which their progeny have never lost. However, it is only relatively recently that they discovered that, if light is reunited fleetingly with matter and then scattered again, it carries with it detailed information – albeit in code – about the structure of matter. It is the purpose of this book to provide the means for deciphering the information carried by the scattered light. (Claude Monet)</p>
-</blockquote>
-<p>In the same spirit, Raman scattering is the interaction resultant of photon interaction with matters, in its own sense, and of its own length of range. Predictably, redirection and changes of frequency of incident lights propagating through the medium. The scattering effect is <strong>elastic</strong> if frequency is constant, but <strong>inelastic</strong> if it varies.</p>
-<p>The word <em>spectroscopy</em> indicates utilization of electromagnetic radiation, when interaction with atoms and molecules. Their ‘after effect’ varies, for example, being induced absorption, spontaneous emission, induced emission. Some of the more direct descriptions includes luminescence and fluorescence, scattering, and reflections. Of all, the typical interest is based on the event of <strong>scattering</strong>.</p>
-<p>For a <em>scattering coefficient</em> <span class="math inline">\(k_{s}\)</span>, the intensity of light of <em>wavelength</em> <span class="math inline">\(\lambda\)</span> after passing through a medium of thickness <span class="math inline">\(L\)</span>, <span class="math inline">\(I(\lambda)\)</span>, may be given by <span class="math display">\[
-I(\lambda)=I_{0}(\lambda)\exp{(-k_{s}L)}
-\]</span> where <span class="math inline">\(I_{0}(\lambda)\)</span> is the intensity of light entering, and <span class="math inline">\(k_{s}L\)</span> is the <strong>optical depth</strong>, denoted <span class="math inline">\(\tau\)</span>. When both scattering and absorption occur, the overall extinction can be defined as <span class="math inline">\(k_{e}=k_{s}+k_{a}\)</span> for absorption coefficient <span class="math inline">\(k_{a}\)</span>. Extinction (or attenuation) is&nbsp;<strong>the sum of scattering and absorption</strong>, so it represents. total effect of medium on radiation passing the medium. The intensity is then can be found again, using the <em>Beer-Lambert law</em> as above: <span class="math display">\[
-I(\lambda)=I_{0}(\lambda)\exp(-k_{e}L)
-\]</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/r29/Pasted image 20241113150544.png" class="img-fluid figure-img"></p>
-<figcaption>Illustration of a very rundown, average spectroscopic system.</figcaption>
-</figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Zotero integration</h1>
 </div>
-<p>Even with some of its drawback, characteristic scattering is less susceptible to the environment (<em>fluorescence spectroscopy</em>), spectrum is easier to decodes (<em>IR spectroscopy</em>), somewhat easier to set up and maintain (<em>reflection-absorption spectroscopy</em>), and others.</p>
-</section>
-<section id="the-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
-<p>The main problem concerned with this is that we have <em>no conclusive, cohesive picture</em> about the general theory of Raman scattering, spectroscopy, or even vibrational spectroscopy - the type of spectroscopy that Raman is based on, as of date. It is wise to note that since its conception by C. V. Raman, the theory can be abhorrently and arrogantly explained by classical physics, through a variety of ideas and layers, up to quantum physics of quantized phonon interaction between matters and so on. Nevertheless, it remains true, and rings true of its purpose, that there exists no cohesive picture, or a partially clear one that clears out the historical interpretation, models, and different approach leading to said problem. That is what the research is about. We note that depends on the timescale of the project, it might, or might not be <em>exhaustive</em>. Nevertheless, it is fair to say we still want at least a preliminary picture in general, of the topic itself.</p>
-<hr>
-<p>Update (19th October 2025) - Update phase 1. Update Zotero instruction and thereof, as well as technologies used. For such instruction, please see <a href="../content/r29_zotero.html">here</a>.</p>
 
 
-</section>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>For streamlining different parts of our research, one of the main technology - or rather an antique one, but in general standard, is <strong>citation management</strong>. Toward such end, of between various countries together in a single research, <em>Zotero</em> stood out surprisingly well as one of the main tool of such. So, this is a quick guide.</p>
+<p>First, look into <a href="https://www.zotero.org/support/">The Zotero Documentation</a> that is available on their own website, including both installation and usual minimal working example. Specifically, after reading installation, refers to <a href="https://www.zotero.org/support/groups">Group configuration</a> for references and information related to our own project and how to retrieve and sync the library with other team members. Respective online library entry is available for each research topic, as well as the group itself, which is available in the respective organization list. For a very slim and kind of outdated tutorial, see <a href="https://libguides.unm.edu/Zotero">this one here</a>.</p>
+
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -835,7 +790,7 @@ I(\lambda)=I_{0}(\lambda)\exp(-k_{e}L)
  2025 Copyright (c) Bui Gia Khanh (Fujimiya Amane) and others
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/devitocodes/devitocodes.github.io/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/devitocodes/devitocodes.github.io/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
