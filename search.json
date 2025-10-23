@@ -128,29 +128,22 @@
   {
     "objectID": "tutorial.html",
     "href": "tutorial.html",
-    "title": "Tutorial for documentation",
+    "title": "Collaborative working",
     "section": "",
     "text": "Since a lot of my work is on the website, which is deliberately built upon quarto and thereof, there are tutorials to be made in advance. Some of these tutorials are from NOAA webpages."
   },
   {
-    "objectID": "tutorial.html#edit-and-add-your-pages",
-    "href": "tutorial.html#edit-and-add-your-pages",
-    "title": "Tutorial for documentation",
-    "section": "Edit and add your pages",
-    "text": "Edit and add your pages\nEdit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+    "objectID": "tutorial.html#for-contents-on-website-pages",
+    "href": "tutorial.html#for-contents-on-website-pages",
+    "title": "Collaborative working",
+    "section": "For contents on website (pages)",
+    "text": "For contents on website (pages)\nEdit the .qmd or .md files in the content folder. .qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more). By default, the webpage is set to freeze execution, so usually everything would be compiled locally first.\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: \n&lt;other_config&gt;\n---\n# First title\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation, though they use Reveal.js).\n\nAdd your pages the project\nAdd the files to _quarto.yml is the usual choice. However, in this work, it would be more preferable to edit the publication page and links from there. Quarto resolver will figure it out by itself, as always.\n\n\nDo your first publish\nThe website is already configured, so usually, to publish, simply (if you have quarto installed, otherwise just commit and I will pull the source back and do the publishing), with enough push & pull permission, do\nquarto publish gh-pages\nIf you did not type gh-pages - kind of alright, because Quarto’s CLI GUI will give you options to choose from such. Configure it for the first time so it can type check. Then, simply wait until it is done."
   },
   {
-    "objectID": "tutorial.html#add-your-pages-the-project",
-    "href": "tutorial.html#add-your-pages-the-project",
-    "title": "Tutorial for documentation",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
-  },
-  {
-    "objectID": "tutorial.html#webpage-publishing",
-    "href": "tutorial.html#webpage-publishing",
-    "title": "Tutorial for documentation",
-    "section": "Webpage publishing",
-    "text": "Webpage publishing\nTo get your Quarto webpage to show up with the url\nyourname.github.io/yourrepo\nyou have a few steps.\n\nTurn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up\n\n\nDo your first publish\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch, which is also most of the time the website is deployed."
+    "objectID": "tutorial.html#for-git-and-people-working-on-repository",
+    "href": "tutorial.html#for-git-and-people-working-on-repository",
+    "title": "Collaborative working",
+    "section": "For git and people working on repository",
+    "text": "For git and people working on repository\nThere are two types of repository public or private, that we would be using, especially with collaborative work and remote of such. One of which is GitHub, as we already have, and the second one is GitLab, of which offers a more secure pipeline and organization template. If it is GitHub, for repository without permission (either I did not configure it for you), you can simply fork it while waiting for push permission to be accepted (elevation of roles). Otherwise, if yes, then simply do\ngit clone repository-link(.git)\ncd repository-name\ngit remote add origin &lt;branch&gt;\ngit branch --set-upstream-to=&lt;branch&gt;\nThen, simply next time you do anything, just do the flow of\ngit fetch \ngit pull # (above command and this is for obtaining updated from GitHub codes)\n\ngit add * # (add everything)\ngit commit -m \"&lt;message&gt;\"\ngit push\nAnd usually it would be done, fairly speaking. On GitLab, it is a bit more difficult, but usually git would handle the same way. There is the issue with SSL security code that you would have to set up later for push or pull flow to be accepted, however. This is usually covered in Microsoft official documentation. To do this, and generate, simply do this in cmd or powershell:\nssh-keygen -t ecdsa\n\n# For normal users.\n# Get the public key file generated previously on your client.\n$authorizedKey = Get-Content -Path $env:USERPROFILE\\.ssh\\id_ecdsa.pub\n\n# Generate the PowerShell command to run remotely that copies the public key file generated previously on your client to the authorized_keys file on your server.\n$remotePowershell = \"powershell New-Item -Force -ItemType Directory -Path $env:USERPROFILE\\.ssh; Add-Content -Force -Path $env:USERPROFILE\\.ssh\\authorized_keys -Value '$authorizedKey'\"\n\n# Connect to your server and run the PowerShell command by using the $remotePowerShell variable.\nssh username@domain1@contoso.com $remotePowershell\nDuring the process of ssh-keygen specifically, it will ask you for passkey. Either do that or not. And, take the .pub file in the directory that the prompt would give you, which is like\nMode                LastWriteTime         Length Name\n----                -------------         ------ ----\n-a----         6/3/2021   2:55 PM            464 id_ecdsa\n-a----         6/3/2021   2:55 PM            103 id_ecdsa.pub\nYou can somewhat modify some information of the SSH key. However, do not modify the hash string, or the string of encoded character no one can read."
   }
 ]

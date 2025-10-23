@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial for documentation</title>
+<title>Collaborative working</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -42,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3112566cf6937a9e7af9dd99ed816c1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ccde06ee1e90087255e28f4fe4ff3809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-3112566cf6937a9e7af9dd99ed816c1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2291266205b121511a7454d4b3e4db4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d87eb0912e54d6563dc8fa97e4824448.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2291266205b121511a7454d4b3e4db4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +123,7 @@ ga('send', {
 
 
 <link rel="stylesheet" href="assets/css/main.scss">
-<meta name="twitter:title" content="Tutorial for documentation">
+<meta name="twitter:title" content="Collaborative working">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/images/favicon.ico">
 <meta name="twitter:site" content="@DevitoCodes">
@@ -333,13 +368,12 @@ ga('send', {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#edit-and-add-your-pages" id="toc-edit-and-add-your-pages" class="nav-link active" data-scroll-target="#edit-and-add-your-pages">Edit and add your pages</a></li>
-  <li><a href="#add-your-pages-the-project" id="toc-add-your-pages-the-project" class="nav-link" data-scroll-target="#add-your-pages-the-project">Add your pages the project</a></li>
-  <li><a href="#webpage-publishing" id="toc-webpage-publishing" class="nav-link" data-scroll-target="#webpage-publishing">Webpage publishing</a>
+  <li><a href="#for-contents-on-website-pages" id="toc-for-contents-on-website-pages" class="nav-link active" data-scroll-target="#for-contents-on-website-pages">For contents on website (pages)</a>
   <ul class="collapse">
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
+  <li><a href="#add-your-pages-the-project" id="toc-add-your-pages-the-project" class="nav-link" data-scroll-target="#add-your-pages-the-project">Add your pages the project</a></li>
   <li><a href="#do-your-first-publish" id="toc-do-your-first-publish" class="nav-link" data-scroll-target="#do-your-first-publish">Do your first publish</a></li>
   </ul></li>
+  <li><a href="#for-git-and-people-working-on-repository" id="toc-for-git-and-people-working-on-repository" class="nav-link" data-scroll-target="#for-git-and-people-working-on-repository">For git and people working on repository</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/devitocodes/devitocodes.github.io/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="tutorial.ipynb" download="tutorial.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
@@ -349,7 +383,7 @@ ga('send', {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tutorial for documentation</h1>
+<h1 class="title">Collaborative working</h1>
 </div>
 
 
@@ -367,53 +401,65 @@ ga('send', {
 
 
 <p>Since a lot of my work is on the website, which is deliberately built upon <code>quarto</code> and thereof, there are tutorials to be made in advance. Some of these tutorials are from NOAA webpages.</p>
-<section id="edit-and-add-your-pages" class="level2">
-<h2 class="anchored" data-anchor-id="edit-and-add-your-pages">Edit and add your pages</h2>
-<p>Edit the qmd or md files in the <code>content</code> folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).</p>
+<section id="for-contents-on-website-pages" class="level2">
+<h2 class="anchored" data-anchor-id="for-contents-on-website-pages">For contents on website (pages)</h2>
+<p>Edit the <code>.qmd</code> or <code>.md</code> files in the <code>content</code> folder. <code>.qmd</code> files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more). By default, the webpage is set to <code>freeze</code> execution, so usually everything would be compiled locally first.</p>
 <p>Each page should start with</p>
-<pre><code>---
-title: your title
----</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> your title</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>and the first header will be the 2nd level, so <code>##</code>. Note, there are situations where you leave off</p>
-<pre><code>---
-title: your title
----</code></pre>
-<p>and start the qmd file with a level header <code>#</code>, but if using the default title yaml (in the <code>---</code> fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).</p>
-</section>
-<section id="add-your-pages-the-project" class="level2">
-<h2 class="anchored" data-anchor-id="add-your-pages-the-project">Add your pages the project</h2>
-<ul>
-<li>Add the files to <code>_quarto.yml</code></li>
-</ul>
-</section>
-<section id="webpage-publishing" class="level2">
-<h2 class="anchored" data-anchor-id="webpage-publishing">Webpage publishing</h2>
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level3">
-<h3 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h3>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;other_config&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># First title</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>and start the qmd file with a level header <code>#</code>, but if using the default title yaml (in the <code>---</code> fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation, though they use Reveal.js).</p>
+<section id="add-your-pages-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="add-your-pages-the-project">Add your pages the project</h3>
+<p>Add the files to <code>_quarto.yml</code> is the usual choice. However, in this work, it would be more preferable to edit the <a href="./publications.html">publication page</a> and links from there. Quarto resolver will figure it out by itself, as always.</p>
 </section>
 <section id="do-your-first-publish" class="level3">
 <h3 class="anchored" data-anchor-id="do-your-first-publish">Do your first publish</h3>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
-<ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
-</ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
-<ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
-</ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch, which is also most of the time the website is deployed.</p>
-
-
+<p>The website is already configured, so usually, to publish, simply (if you have quarto installed, otherwise just commit and I will pull the source back and do the publishing), with enough push &amp; pull permission, do</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you did not type <code>gh-pages</code> - kind of alright, because Quarto’s CLI GUI will give you options to choose from such. Configure it for the first time so it can type check. Then, simply wait until it is done.</p>
 </section>
+</section>
+<section id="for-git-and-people-working-on-repository" class="level2">
+<h2 class="anchored" data-anchor-id="for-git-and-people-working-on-repository">For git and people working on repository</h2>
+<p>There are two types of repository public or private, that we would be using, especially with collaborative work and remote of such. One of which is GitHub, as we already have, and the second one is <strong>GitLab</strong>, of which offers a more secure pipeline and organization template. If it is GitHub, for repository without permission (either I did not configure it for you), you can simply <em>fork it</em> while waiting for push permission to be accepted (elevation of roles). Otherwise, if yes, then simply do</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone repository-link<span class="er">(</span><span class="ex">.git</span><span class="kw">)</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> repository-name</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin <span class="op">&lt;</span>branch<span class="op">&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">--set-upstream-to</span><span class="op">=&lt;</span>branch<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then, simply next time you do anything, just do the flow of</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="co"># (above command and this is for obtaining updated from GitHub codes)</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="pp">*</span> <span class="co"># (add everything)</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"&lt;message&gt;"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>And usually it would be done, fairly speaking. On GitLab, it is a bit more difficult, but usually <code>git</code> would handle the same way. There is the issue with <code>SSL</code> security code that you would have to set up later for push or pull flow to be accepted, however. This is usually covered in <a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement">Microsoft official documentation</a>. To do this, and generate, simply do this in <code>cmd</code> or <code>powershell</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ecdsa</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># For normal users.</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the public key file generated previously on your client.</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="va">$authorizedKey</span> = Get-Content <span class="at">-Path</span> <span class="va">$env</span>:USERPROFILE<span class="dt">\.</span>ssh<span class="dt">\i</span>d_ecdsa.pub</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the PowerShell command to run remotely that copies the public key file generated previously on your client to the authorized_keys file on your server.</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="va">$remotePowershell</span> = <span class="st">"powershell New-Item -Force -ItemType Directory -Path </span><span class="va">$env</span><span class="st">:USERPROFILE\.ssh; Add-Content -Force -Path </span><span class="va">$env</span><span class="st">:USERPROFILE\.ssh\authorized_keys -Value '</span><span class="va">$authorizedKey</span><span class="st">'"</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Connect to your server and run the PowerShell command by using the $remotePowerShell variable.</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> username@domain1@contoso.com <span class="va">$remotePowershell</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>During the process of <code>ssh-keygen</code> specifically, it will ask you for passkey. Either do that or not. And, take the <code>.pub</code> file in the directory that the prompt would give you, which is like</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Mode</span>                LastWriteTime         Length Name</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">----</span>                <span class="at">-------------</span>         <span class="at">------</span> <span class="at">----</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-a----</span>         6/3/2021   2:55 PM            464 id_ecdsa</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-a----</span>         6/3/2021   2:55 PM            103 id_ecdsa.pub</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You can somewhat modify some information of the SSH key. However, <strong>do not modify the hash string</strong>, or the string of encoded character no one can read.</p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
