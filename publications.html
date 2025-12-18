@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>publications</title>
+<title>Research provisions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,8 +86,42 @@ ga('send', {
 });
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="assets/css/main.scss">
+<meta name="twitter:title" content="Research provisions">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/images/favicon.ico">
+<meta name="twitter:site" content="@Fujimiya_Amane_">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -275,7 +309,7 @@ ga('send', {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorial.html"> 
+    <a class="nav-link" href="./tutorials.html"> 
 <span class="menu-text">Guidance</span></a>
   </li>  
   <li class="nav-item">
@@ -283,7 +317,7 @@ ga('send', {
 <span class="menu-text">Philosophy</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="./content/main/bulletin.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -328,24 +362,222 @@ ga('send', {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#notice" id="toc-notice" class="nav-link active" data-scroll-target="#notice">Notice</a></li>
+  <li><a href="#in-preparations" id="toc-in-preparations" class="nav-link active" data-scroll-target="#in-preparations">In preparations</a>
+  <ul class="collapse">
+  <li><a href="#physics" id="toc-physics" class="nav-link" data-scroll-target="#physics">Physics</a></li>
+  </ul></li>
+  <li><a href="#uncategorized" id="toc-uncategorized" class="nav-link" data-scroll-target="#uncategorized">Uncategorized</a>
+  <ul class="collapse">
+  <li><a href="#double-descent-a-review" id="toc-double-descent-a-review" class="nav-link" data-scroll-target="#double-descent-a-review">Double descent: a review</a></li>
+  <li><a href="#interpreting-double-descent-in-polynomial-via-density-estimation" id="toc-interpreting-double-descent-in-polynomial-via-density-estimation" class="nav-link" data-scroll-target="#interpreting-double-descent-in-polynomial-via-density-estimation">Interpreting double descent in polynomial via density estimation</a></li>
+  <li><a href="#double-descent-on-support-vector-machine-and-polynomial-models-on-binary-classification-an-analysis" id="toc-double-descent-on-support-vector-machine-and-polynomial-models-on-binary-classification-an-analysis" class="nav-link" data-scroll-target="#double-descent-on-support-vector-machine-and-polynomial-models-on-binary-classification-an-analysis">Double descent on support vector machine and polynomial models on binary classification – an analysis</a></li>
+  <li><a href="#pinns-and-double-descent" id="toc-pinns-and-double-descent" class="nav-link" data-scroll-target="#pinns-and-double-descent">PINNs and double descent</a></li>
+  <li><a href="#classical-learning-theory-and-future" id="toc-classical-learning-theory-and-future" class="nav-link" data-scroll-target="#classical-learning-theory-and-future">Classical learning theory and future</a></li>
+  <li><a href="#a-review-of-model-structures-in-machine-learning-and-theoretical-machine-learning" id="toc-a-review-of-model-structures-in-machine-learning-and-theoretical-machine-learning" class="nav-link" data-scroll-target="#a-review-of-model-structures-in-machine-learning-and-theoretical-machine-learning">A review of model structures in machine learning and theoretical machine learning</a></li>
+  <li><a href="#different-treatment-of-machine-learning-an-analysis" id="toc-different-treatment-of-machine-learning-an-analysis" class="nav-link" data-scroll-target="#different-treatment-of-machine-learning-an-analysis">Different treatment of machine learning – an analysis</a></li>
+  <li><a href="#reuniting-the-neural-network-framework-using-partial-category-theory" id="toc-reuniting-the-neural-network-framework-using-partial-category-theory" class="nav-link" data-scroll-target="#reuniting-the-neural-network-framework-using-partial-category-theory">Reuniting the neural network framework using partial category theory</a></li>
+  <li><a href="#on-the-capacity-and-capability-of-neural-networks" id="toc-on-the-capacity-and-capability-of-neural-networks" class="nav-link" data-scroll-target="#on-the-capacity-and-capability-of-neural-networks">On the capacity and capability of neural networks</a></li>
+  <li><a href="#machine-learning-from-a-mathematical-modelling-view" id="toc-machine-learning-from-a-mathematical-modelling-view" class="nav-link" data-scroll-target="#machine-learning-from-a-mathematical-modelling-view">Machine learning from a mathematical modelling view</a></li>
+  <li><a href="#the-analysis-of-statistical-physics-on-machine-learning" id="toc-the-analysis-of-statistical-physics-on-machine-learning" class="nav-link" data-scroll-target="#the-analysis-of-statistical-physics-on-machine-learning">The analysis of statistical physics on machine learning</a></li>
+  <li><a href="#classical-model-into-neural-network-architecture-an-analysis" id="toc-classical-model-into-neural-network-architecture-an-analysis" class="nav-link" data-scroll-target="#classical-model-into-neural-network-architecture-an-analysis">Classical model into neural network architecture – an analysis</a></li>
+  <li><a href="#unsolved-problems-in-theoretical-machine-learning" id="toc-unsolved-problems-in-theoretical-machine-learning" class="nav-link" data-scroll-target="#unsolved-problems-in-theoretical-machine-learning">Unsolved problems in theoretical machine learning</a></li>
+  <li><a href="#differential-equations-and-machine-learning-interpreting-machine-learning-system-using-differential-equations" id="toc-differential-equations-and-machine-learning-interpreting-machine-learning-system-using-differential-equations" class="nav-link" data-scroll-target="#differential-equations-and-machine-learning-interpreting-machine-learning-system-using-differential-equations">Differential equations and machine learning – interpreting machine learning system using differential equations</a></li>
+  <li><a href="#dynamic-modelling-and-the-naturalness-of-quantum-similar-system-quantization" id="toc-dynamic-modelling-and-the-naturalness-of-quantum-similar-system-quantization" class="nav-link" data-scroll-target="#dynamic-modelling-and-the-naturalness-of-quantum-similar-system-quantization">Dynamic modelling, and the naturalness of quantum-similar system quantization</a></li>
+  <li><a href="#neural-network-learning-equals-mathematical-model-structural-approximation" id="toc-neural-network-learning-equals-mathematical-model-structural-approximation" class="nav-link" data-scroll-target="#neural-network-learning-equals-mathematical-model-structural-approximation">Neural network learning equals mathematical model structural approximation</a></li>
+  <li><a href="#concentration-inequalities-in-theoretical-machine-learning-for-beginner" id="toc-concentration-inequalities-in-theoretical-machine-learning-for-beginner" class="nav-link" data-scroll-target="#concentration-inequalities-in-theoretical-machine-learning-for-beginner">Concentration inequalities in theoretical machine learning for beginner</a></li>
+  <li><a href="#structural-addition-in-machine-learning-an-analysis" id="toc-structural-addition-in-machine-learning-an-analysis" class="nav-link" data-scroll-target="#structural-addition-in-machine-learning-an-analysis">Structural addition in machine learning – an analysis</a></li>
+  <li><a href="#component-and-structural-realization-of-large-language-model-and-why-they-are-not-intelligent" id="toc-component-and-structural-realization-of-large-language-model-and-why-they-are-not-intelligent" class="nav-link" data-scroll-target="#component-and-structural-realization-of-large-language-model-and-why-they-are-not-intelligent">Component and structural realization of large language model and why they are not intelligent</a></li>
+  <li><a href="#hallucination-is-biasvariance-tradeoff" id="toc-hallucination-is-biasvariance-tradeoff" class="nav-link" data-scroll-target="#hallucination-is-biasvariance-tradeoff">Hallucination is bias–variance tradeoff</a></li>
+  <li><a href="#visualization-of-neural-network-operation-and-layer-theoretic" id="toc-visualization-of-neural-network-operation-and-layer-theoretic" class="nav-link" data-scroll-target="#visualization-of-neural-network-operation-and-layer-theoretic">Visualization of neural network operation and layer theoretic</a></li>
+  <li><a href="#time-sensitive-processing-network" id="toc-time-sensitive-processing-network" class="nav-link" data-scroll-target="#time-sensitive-processing-network">Time-sensitive processing network</a></li>
+  <li><a href="#always-running-neural-network" id="toc-always-running-neural-network" class="nav-link" data-scroll-target="#always-running-neural-network">Always running neural network</a></li>
+  <li><a href="#visualizing-dynamics-and-bias-variance-plus-double-descent" id="toc-visualizing-dynamics-and-bias-variance-plus-double-descent" class="nav-link" data-scroll-target="#visualizing-dynamics-and-bias-variance-plus-double-descent">Visualizing dynamics and bias-variance plus double descent</a></li>
+  <li><a href="#information-theoretic-interpretation-of-machine-learning-framework" id="toc-information-theoretic-interpretation-of-machine-learning-framework" class="nav-link" data-scroll-target="#information-theoretic-interpretation-of-machine-learning-framework">Information theoretic interpretation of machine learning framework</a></li>
+  <li><a href="#randomized-neural-network-architecture-on-permutations" id="toc-randomized-neural-network-architecture-on-permutations" class="nav-link" data-scroll-target="#randomized-neural-network-architecture-on-permutations">Randomized neural network architecture on permutations</a></li>
+  <li><a href="#multinet-a-new-multidirectional-structure-of-neural-network-formalism" id="toc-multinet-a-new-multidirectional-structure-of-neural-network-formalism" class="nav-link" data-scroll-target="#multinet-a-new-multidirectional-structure-of-neural-network-formalism"><code>MultiNet</code> – A new multidirectional structure of neural network formalism</a></li>
+  <li><a href="#theoretical-explanation-for-neural-scaling-law" id="toc-theoretical-explanation-for-neural-scaling-law" class="nav-link" data-scroll-target="#theoretical-explanation-for-neural-scaling-law">Theoretical explanation for Neural Scaling Law</a></li>
+  <li><a href="#reversibility-or-not-of-mechanistic-probabilistic-systems" id="toc-reversibility-or-not-of-mechanistic-probabilistic-systems" class="nav-link" data-scroll-target="#reversibility-or-not-of-mechanistic-probabilistic-systems">Reversibility or not of mechanistic-probabilistic systems</a></li>
+  <li><a href="#the-test-of-modelling-component-based-modelling-and-a-toy-model-of-analysis" id="toc-the-test-of-modelling-component-based-modelling-and-a-toy-model-of-analysis" class="nav-link" data-scroll-target="#the-test-of-modelling-component-based-modelling-and-a-toy-model-of-analysis">The test of modelling – component-based modelling and a toy model of analysis</a></li>
+  <li><a href="#the-kuhnian-cycle-and-the-development-of-artificial-intelligence-theory" id="toc-the-kuhnian-cycle-and-the-development-of-artificial-intelligence-theory" class="nav-link" data-scroll-target="#the-kuhnian-cycle-and-the-development-of-artificial-intelligence-theory">The Kuhnian cycle and the development of artificial intelligence theory</a></li>
+  <li><a href="#an-analysis-on-navierstokes-equation" id="toc-an-analysis-on-navierstokes-equation" class="nav-link" data-scroll-target="#an-analysis-on-navierstokes-equation">An analysis on Navier–Stokes equation</a></li>
+  <li><a href="#the-illusion-of-correctness-how-quantum-mechanics-is-so-correct" id="toc-the-illusion-of-correctness-how-quantum-mechanics-is-so-correct" class="nav-link" data-scroll-target="#the-illusion-of-correctness-how-quantum-mechanics-is-so-correct">The illusion of correctness – how quantum mechanics is so correct?</a></li>
+  <li><a href="#quantum-like-system-and-naturalness-of-the-encoding-language" id="toc-quantum-like-system-and-naturalness-of-the-encoding-language" class="nav-link" data-scroll-target="#quantum-like-system-and-naturalness-of-the-encoding-language">Quantum-like system and naturalness of the encoding language</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Amane-Fujimiya/Research/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="publications.ipynb" download="publications.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Research provisions</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>This page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate. For now, let us construct the main foundation on what are we going to do with the short-term papers and not the long-term, 2.5 years waitlist papers.</p>
-<section id="notice" class="level2">
-<h2 class="anchored" data-anchor-id="notice">Notice</h2>
-<p>This page is almost deprecated, and waiting for transition when setup of <a href="https://gitlab.com/aml_reposition_sub_centre/AML_Reposition_Sub-Main">the GitLab replacement</a> is completed.</p>
-<p>Updated. It is completed (December 11th 2025) - <a href="https://aml-reposition-sub-main-e0fe65.gitlab.io/">see here of the new website</a>. This website is still the front and updates and stuff, for organization and what not.</p>
+</header>
 
 
+<p>The research preparation do exactly what it is to be done - providing the framework or groundwork in which, deliberately, alongside the <em>directive</em> could be conducted, and so on. Thus, we have two categories only as the main focal part, the <em>in preparations</em> papers, and <em>uncategorized list</em> of papers in proposals, of which should the need arises, will be categorized per-field and per-directive. The current <strong>bulletin</strong> can be found <a href="./content/main/bulletin.html">here</a> for active current projects and papers.</p>
+<section id="in-preparations" class="level2">
+<h2 class="anchored" data-anchor-id="in-preparations">In preparations</h2>
+<p>In preparation, not conducted actively, but building logistic and infrastructures (intellectually or whatever).</p>
+<section id="physics" class="level3">
+<h3 class="anchored" data-anchor-id="physics">Physics</h3>
+<ul>
+<li>Expository papers (quantum theory) - entry 33 in previous conception.</li>
+<li>A paper on <strong>Quantum-like systems and emergence of quantum method</strong> or rather as the old name - <strong>Dynamic modelling, and the naturalness of quantum-similar system quantization.</strong>, basically that, we try the masking, proxical-style configuration that is present in quantum system proposition (that is, the mismatch of results, at least when it comes to classical apparatus and observations), and test it on the ground of the new philosophical analysis of modelling we did back then. If, the first quantization comes naturally as encoding, then perhaps the <em>second quantization</em> will also follow. And it might explain or apply in which what can be done of the chaotic useless landscape that AI has, basically <em>abstractive localization</em>, considering higher diffusion area then fully numeric details, relatively. The strength is that we are doing quantum-like, not quantum. If it can be generalized such that it is an effective treatment for such ‘game of discrepancies’, then perhaps it can reveal the paradox, and thus the naturalness of quantum mechanics. <code>RP01</code></li>
+<li>A paper on <strong>Low-dimensional semiconductors - quantum well and analysis</strong> - review and summarizing in purpose expository paper. <code>RP02</code></li>
+</ul>
+</section>
+</section>
+<section id="uncategorized" class="level2">
+<h2 class="anchored" data-anchor-id="uncategorized">Uncategorized</h2>
+<p>Because of the scale of research topics, it is evident to not categorize such approaches or so on, as of current notions. Those in preparation or when I have times to organize them will make haste of such to the above sections when sufficient of contents.</p>
+<section id="double-descent-a-review" class="level3">
+<h3 class="anchored" data-anchor-id="double-descent-a-review">Double descent: a review</h3>
+<p>(review, reference): A reference and review paper talking about double descent. Including effort to formalize the definition of it.</p>
+</section>
+<section id="interpreting-double-descent-in-polynomial-via-density-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="interpreting-double-descent-in-polynomial-via-density-estimation">Interpreting double descent in polynomial via density estimation</h3>
+<p>(original, theory): A fairly light and theoretical paper on the toy model description of polynomial model and different interpretation.</p>
+</section>
+<section id="double-descent-on-support-vector-machine-and-polynomial-models-on-binary-classification-an-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="double-descent-on-support-vector-machine-and-polynomial-models-on-binary-classification-an-analysis">Double descent on support vector machine and polynomial models on binary classification – an analysis</h3>
+<p>(experimental, theory): A both theory and experimental paper.</p>
+</section>
+<section id="pinns-and-double-descent" class="level3">
+<h3 class="anchored" data-anchor-id="pinns-and-double-descent">PINNs and double descent</h3>
+<p>(experimental): An experimental on PINNs and how to identify double descent on it.</p>
+</section>
+<section id="classical-learning-theory-and-future" class="level3">
+<h3 class="anchored" data-anchor-id="classical-learning-theory-and-future">Classical learning theory and future</h3>
+<p>(original, review, experiments).</p>
+</section>
+<section id="a-review-of-model-structures-in-machine-learning-and-theoretical-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="a-review-of-model-structures-in-machine-learning-and-theoretical-machine-learning">A review of model structures in machine learning and theoretical machine learning</h3>
+<p>(theoretical, review, reference): A reference paper on the concept of models in machine learning, their structures, flavour, consideration, and thereof.</p>
+</section>
+<section id="different-treatment-of-machine-learning-an-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="different-treatment-of-machine-learning-an-analysis">Different treatment of machine learning – an analysis</h3>
+<p>(review, reference, original): A paper on the different treatment of machine learning, from different lens and scale, and how do they fit together (categorical machine learning for example).</p>
+</section>
+<section id="reuniting-the-neural-network-framework-using-partial-category-theory" class="level3">
+<h3 class="anchored" data-anchor-id="reuniting-the-neural-network-framework-using-partial-category-theory">Reuniting the neural network framework using partial category theory</h3>
+<p>(original, theory): Using the proposed categorical machine learning or neural network to consider reuniting different architecture together under the same framework.</p>
+</section>
+<section id="on-the-capacity-and-capability-of-neural-networks" class="level3">
+<h3 class="anchored" data-anchor-id="on-the-capacity-and-capability-of-neural-networks">On the capacity and capability of neural networks</h3>
+<p>(review, original): A paper analysing the capacity and capability of neural networks on various tasks and setting thereof, and so forth, considering different structures.</p>
+</section>
+<section id="machine-learning-from-a-mathematical-modelling-view" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-from-a-mathematical-modelling-view">Machine learning from a mathematical modelling view</h3>
+<p>(review, original): Proposing a modelling theoretic, internal state interpretation to machine learning.</p>
+</section>
+<section id="the-analysis-of-statistical-physics-on-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="the-analysis-of-statistical-physics-on-machine-learning">The analysis of statistical physics on machine learning</h3>
+<p>(review, original): Setting up a review work on how statistical physics is related to machine learning, where is it failing and what constitute the failure.</p>
+</section>
+<section id="classical-model-into-neural-network-architecture-an-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="classical-model-into-neural-network-architecture-an-analysis">Classical model into neural network architecture – an analysis</h3>
+<p>(original, theoretical): An attempt to attack and formalize classical models into neural network theoretic (unit-wise approach of neuronal unit) to classical models, hence gauging their capability.</p>
+</section>
+<section id="unsolved-problems-in-theoretical-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="unsolved-problems-in-theoretical-machine-learning">Unsolved problems in theoretical machine learning</h3>
+<p>(original, review): A work in review of different interpretations and problems residing the current framework of machine learning.</p>
+</section>
+<section id="differential-equations-and-machine-learning-interpreting-machine-learning-system-using-differential-equations" class="level3">
+<h3 class="anchored" data-anchor-id="differential-equations-and-machine-learning-interpreting-machine-learning-system-using-differential-equations">Differential equations and machine learning – interpreting machine learning system using differential equations</h3>
+<p>(original, theory): An attempt to express ML systems in terms of differential equations, just as the differential model.</p>
+</section>
+<section id="dynamic-modelling-and-the-naturalness-of-quantum-similar-system-quantization" class="level3">
+<h3 class="anchored" data-anchor-id="dynamic-modelling-and-the-naturalness-of-quantum-similar-system-quantization">Dynamic modelling, and the naturalness of quantum-similar system quantization</h3>
+<p>Basically that: we try the masking, proximal-style configuration that is present in quantum system proposition, and test it on the ground of the new philosophical analysis of modelling we did back then. If the first quantization comes naturally as encoding, then perhaps the <em>second quantization</em> will also follow. And it might explain or apply in which what can be done of the chaotic useless landscape that AI has, basically <em>abstractive localization</em>, considering higher diffusion area then fully numeric details, relatively.</p>
+</section>
+<section id="neural-network-learning-equals-mathematical-model-structural-approximation" class="level3">
+<h3 class="anchored" data-anchor-id="neural-network-learning-equals-mathematical-model-structural-approximation">Neural network learning equals mathematical model structural approximation</h3>
+<p>(original, theory, experiment).</p>
+</section>
+<section id="concentration-inequalities-in-theoretical-machine-learning-for-beginner" class="level3">
+<h3 class="anchored" data-anchor-id="concentration-inequalities-in-theoretical-machine-learning-for-beginner">Concentration inequalities in theoretical machine learning for beginner</h3>
+</section>
+<section id="structural-addition-in-machine-learning-an-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="structural-addition-in-machine-learning-an-analysis">Structural addition in machine learning – an analysis</h3>
+</section>
+<section id="component-and-structural-realization-of-large-language-model-and-why-they-are-not-intelligent" class="level3">
+<h3 class="anchored" data-anchor-id="component-and-structural-realization-of-large-language-model-and-why-they-are-not-intelligent">Component and structural realization of large language model and why they are not intelligent</h3>
+<p>Just to prove that LLM is not, well, intelligent and again, won’t ever be AGI.</p>
+</section>
+<section id="hallucination-is-biasvariance-tradeoff" class="level3">
+<h3 class="anchored" data-anchor-id="hallucination-is-biasvariance-tradeoff">Hallucination is bias–variance tradeoff</h3>
+<p>We just, well, connect it to them.</p>
+</section>
+<section id="visualization-of-neural-network-operation-and-layer-theoretic" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-of-neural-network-operation-and-layer-theoretic">Visualization of neural network operation and layer theoretic</h3>
+</section>
+<section id="time-sensitive-processing-network" class="level3">
+<h3 class="anchored" data-anchor-id="time-sensitive-processing-network">Time-sensitive processing network</h3>
+<p>Something that look like an operational system in the inner units of the neural network.</p>
+</section>
+<section id="always-running-neural-network" class="level3">
+<h3 class="anchored" data-anchor-id="always-running-neural-network">Always running neural network</h3>
+<p>Mimicking a network to, well, always run and is not static.</p>
+</section>
+<section id="visualizing-dynamics-and-bias-variance-plus-double-descent" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-dynamics-and-bias-variance-plus-double-descent">Visualizing dynamics and bias-variance plus double descent</h3>
+</section>
+<section id="information-theoretic-interpretation-of-machine-learning-framework" class="level3">
+<h3 class="anchored" data-anchor-id="information-theoretic-interpretation-of-machine-learning-framework">Information theoretic interpretation of machine learning framework</h3>
+</section>
+<section id="randomized-neural-network-architecture-on-permutations" class="level3">
+<h3 class="anchored" data-anchor-id="randomized-neural-network-architecture-on-permutations">Randomized neural network architecture on permutations</h3>
+<p>(theory, experiment, original): Just a way to do such analysis.</p>
+</section>
+<section id="multinet-a-new-multidirectional-structure-of-neural-network-formalism" class="level3">
+<h3 class="anchored" data-anchor-id="multinet-a-new-multidirectional-structure-of-neural-network-formalism"><code>MultiNet</code> – A new multidirectional structure of neural network formalism</h3>
+<p>(original, experimentation): Just a generalization of what I observed of neural network structure in general. Will have to base on existing facility, can’t do anything else.</p>
+</section>
+<section id="theoretical-explanation-for-neural-scaling-law" class="level3">
+<h3 class="anchored" data-anchor-id="theoretical-explanation-for-neural-scaling-law">Theoretical explanation for Neural Scaling Law</h3>
+<p>(original, theoretical): Just an attempt to solve the neural scaling law.</p>
+</section>
+<section id="reversibility-or-not-of-mechanistic-probabilistic-systems" class="level3">
+<h3 class="anchored" data-anchor-id="reversibility-or-not-of-mechanistic-probabilistic-systems">Reversibility or not of mechanistic-probabilistic systems</h3>
+<p>Now named the <em>theory of the learnable</em> (Valiant style for real). It is mostly based on one of my blog posts, and I want to elaborate such idea.</p>
+</section>
+<section id="the-test-of-modelling-component-based-modelling-and-a-toy-model-of-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="the-test-of-modelling-component-based-modelling-and-a-toy-model-of-analysis">The test of modelling – component-based modelling and a toy model of analysis</h3>
+<p>(experimental): The first follow up papers since the AGI paper.</p>
+</section>
+<section id="the-kuhnian-cycle-and-the-development-of-artificial-intelligence-theory" class="level3">
+<h3 class="anchored" data-anchor-id="the-kuhnian-cycle-and-the-development-of-artificial-intelligence-theory">The Kuhnian cycle and the development of artificial intelligence theory</h3>
+<p>(theoretical, philosophical, sociological, theory of science, original, review): The consideration and analysis in which identify the Kuhnian cycles, the technical sophistry in question, and so on, of which is similar to a historic and field analysis itself.</p>
+</section>
+<section id="an-analysis-on-navierstokes-equation" class="level3">
+<h3 class="anchored" data-anchor-id="an-analysis-on-navierstokes-equation">An analysis on Navier–Stokes equation</h3>
+<p>(physics, original, review, reference, theoretical, mathematics, fluid dynamics): An analysis on Navier–Stokes equations system, the fluid dynamical system and what transpire such. Plus an additional inquiry on how can we reach a solution under such metric.</p>
+</section>
+<section id="the-illusion-of-correctness-how-quantum-mechanics-is-so-correct" class="level3">
+<h3 class="anchored" data-anchor-id="the-illusion-of-correctness-how-quantum-mechanics-is-so-correct">The illusion of correctness – how quantum mechanics is so correct?</h3>
+<p>(original partially, theoretical, review, analysis): About the correctness of quantum mechanics, other tangent theories, classical mechanical interpretations, and so on. Perhaps the tad bit description into the applications onto chemistry, quantum information and quantum computing, and how everything simply “works itself out”, and the classical limit reduction dilemma.</p>
+</section>
+<section id="quantum-like-system-and-naturalness-of-the-encoding-language" class="level3">
+<h3 class="anchored" data-anchor-id="quantum-like-system-and-naturalness-of-the-encoding-language">Quantum-like system and naturalness of the encoding language</h3>
+<p>(original, quantum physics, physics, theoretical): Offering an insight into how quantum-like systems give rise to apparently different formalism, techniques, descriptions and so on. This is particularly helpful, since there exist many different unresolved connotations about complex numbers <span class="math inline">\(\mathbb{C}\)</span>, for example.</p>
+
+
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
