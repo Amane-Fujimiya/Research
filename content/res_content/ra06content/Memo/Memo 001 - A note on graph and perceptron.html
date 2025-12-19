@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>memo-001---a-note-on-graph-and-perceptron</title>
+<title>Memo 001. Perceptron</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,6 +117,11 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../../assets/css/main.scss">
+<meta name="twitter:title" content="Memo 001. Perceptron">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/images/favicon.ico">
+<meta name="twitter:site" content="@Fujimiya_Amane_">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -356,10 +361,26 @@ window.Quarto = {
         
     <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Memo 001 - A note on graph and perceptron.ipynb" download="Memo 001 - A note on graph and perceptron.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Memo 001. Perceptron</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <p>We have jumped quite far from the usual standard of machine learning theory. Put asides the questions of philosophical <strong>intelligence</strong> (and artificial alike), the main architecture that enables such advancement (if one want to call such probabilistic approach as advancement), is the <strong>neural network</strong> model of itself. Usually, this is established within the basis of a Multilayer Perceptron (MLP) structure. Here, however, we takes more of the form of graph theory, the theory of nodes and edges. Intrinsically, however, they works under the same model of neural unit. Before jumping in, there are perspective to look upon. # The difference of procedure GNN and MLP is very different. On one side, you have the system of MLP, being represented of <span class="math display">\[\mathsf{MLP}(n)=(I,L^{(k)}_{n}, O)\]</span> with a single flux direction - i.e.&nbsp;the normal I/O procedure. There is no communication between <span class="math inline">\(\{ L^{(i)}_{j} \}_{i\leq k}\)</span> or the <strong>neural processing unit</strong> between layers. Most of the time, neural network can be seen as a system of directed edge, <em>bipartite graph</em> between successive layers, and every neuron is a subgraph containing the following procedure <span class="math display">\[\mathsf{NEU}(I_{{m}}, \cdot, O_{1})= (I_{m}, \Sigma, \phi, u_{t}, O_{1})\]</span> Where <span class="math inline">\(I_{m}, \Sigma,\phi\)</span> and <span class="math inline">\(u_{t}\)</span> are, accordingly, the <span class="math inline">\(m\)</span>-input handler, the input signal processing, <span class="math inline">\(\phi\)</span> is the interpretable unit of the neuron, and <span class="math inline">\(O_{1}\)</span> is the single output directive afterward. Control injection starts with <span class="math inline">\(I_{m},\mathbf{W}_{I}\)</span> for a series of weight accordingly, within the assumption of “change of behaviours through input confidence”, as we have seen. In fact, the entire structure of a single neuron is done as <span class="math display">\[O_{1}^{t}=\underset{t\to 0, I\in \mathcal{D}}{\mathbb{E}}\:\phi[\Sigma(I_{m} \odot u_{t-1}, \mathbf{W}_{{I}}, \mathbf{b})]\]</span> the <span class="math inline">\(\mathbb{E}\)</span> is there for averaging purpose expression only. And the entire process is a bunch of nested function, of which then <strong>backpropagation</strong> algorithm is used.</p>

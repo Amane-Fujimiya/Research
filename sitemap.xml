@@ -2,87 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://Amane-Fujimiya.github.io/Research/tutorials.html</loc>
-    <lastmod>2025-12-18T04:06:20.681Z</lastmod>
+    <lastmod>2025-12-18T20:29:24.801Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/Section 3IC - Formulating the problem.html</loc>
-    <lastmod>2025-01-23T06:53:07.874Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/index.html</loc>
+    <lastmod>2025-12-18T15:16:43.586Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPAA3 - Adjacency.html</loc>
-    <lastmod>2025-04-26T05:43:47.696Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo S001 - Unit-wise Analysis.html</loc>
+    <lastmod>2025-12-19T05:38:56.865Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPAA1 - Definitions of graph.html</loc>
-    <lastmod>2024-10-12T04:16:57.803Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 009. Revision of theoretical direction.html</loc>
+    <lastmod>2025-12-18T20:36:12.975Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPA - Graph Theory II.html</loc>
-    <lastmod>2024-10-12T03:25:11.829Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 007. Theoretical consideration.html</loc>
+    <lastmod>2025-12-18T20:35:17.006Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPA - Graph Representation Algebra.html</loc>
-    <lastmod>2025-12-14T07:19:52.185Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 004. Ideas.html</loc>
+    <lastmod>2025-12-18T20:34:45.192Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D8 - Permutation Invariance and Equivariance.html</loc>
-    <lastmod>2024-10-11T15:28:12.047Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 001 - A note on graph and perceptron.html</loc>
+    <lastmod>2025-12-18T20:34:15.281Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D6 - Latent Space.html</loc>
-    <lastmod>2025-12-14T07:19:52.184Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra01content/writing_style.html</loc>
+    <lastmod>2025-12-18T18:39:06.311Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D4 - Non-parameterization.html</loc>
-    <lastmod>2024-10-11T07:22:39.075Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra01content/introduction.html</loc>
+    <lastmod>2025-12-18T16:09:09.378Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D2 - Rademacher Complexity.html</loc>
-    <lastmod>2024-10-11T07:11:53.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/C2 - Concept Learning and Inference.html</loc>
-    <lastmod>2025-08-09T17:13:41.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/publications.html</loc>
-    <lastmod>2025-12-18T15:43:11.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/faq.html</loc>
-    <lastmod>2025-12-18T16:07:52.709Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 010. Idea new.html</loc>
-    <lastmod>2025-09-09T17:30:23.965Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 008. Grants.html</loc>
-    <lastmod>2025-08-07T15:25:32.061Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 006. New Idea after first test.html</loc>
-    <lastmod>2025-07-18T08:45:48.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 002. Graph Generator Complement.html</loc>
-    <lastmod>2024-12-18T15:06:28.739Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 000 - GNN Model Analysis.html</loc>
-    <lastmod>2025-12-18T17:54:25.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra01content/ra01_zotero.html</loc>
-    <lastmod>2025-10-31T16:16:52.581Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res/r_ta.html</loc>
-    <lastmod>2025-10-23T09:29:28.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res/ra06.html</loc>
-    <lastmod>2025-12-18T20:25:27.556Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res/rf02.html</loc>
+    <lastmod>2025-12-18T15:36:59.473Z</lastmod>
   </url>
   <url>
     <loc>https://Amane-Fujimiya.github.io/Research/content/res/ra01.html</loc>
@@ -114,94 +70,50 @@
   </url>
   <url>
     <loc>https://Amane-Fujimiya.github.io/Research/content/guideline/tutorial_2.html</loc>
-    <lastmod>2025-12-18T04:03:17.722Z</lastmod>
+    <lastmod>2025-12-18T20:29:22.908Z</lastmod>
   </url>
   <url>
     <loc>https://Amane-Fujimiya.github.io/Research/content/main/bulletin.html</loc>
-    <lastmod>2025-12-18T15:44:39.034Z</lastmod>
+    <lastmod>2025-12-19T06:15:34.410Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res/ra01_zotero.html</loc>
-    <lastmod>2025-12-18T16:08:26.065Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res/ra06.html</loc>
+    <lastmod>2025-12-18T20:33:04.049Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res/rf02.html</loc>
-    <lastmod>2025-12-18T15:36:59.473Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res/r_ta.html</loc>
+    <lastmod>2025-10-23T09:29:28.333Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra01content/introduction.html</loc>
-    <lastmod>2025-12-18T16:09:09.378Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra01content/ra01_zotero.html</loc>
+    <lastmod>2025-10-31T16:16:52.581Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra01content/writing_style.html</loc>
-    <lastmod>2025-12-18T18:39:06.311Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 000 - GNN Model Analysis.html</loc>
+    <lastmod>2025-12-18T17:54:25.752Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 001 - A note on graph and perceptron.html</loc>
-    <lastmod>2024-10-17T09:27:08.816Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 002. Graph Generator Complement.html</loc>
+    <lastmod>2025-12-18T20:34:31.800Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 004. Ideas.html</loc>
-    <lastmod>2025-02-05T13:38:39.210Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 006. New Idea after first test.html</loc>
+    <lastmod>2025-12-18T20:35:06.671Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 007. Theoretical consideration.html</loc>
-    <lastmod>2025-12-18T17:56:34.781Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 008. Grants.html</loc>
+    <lastmod>2025-12-18T20:35:45.298Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 009. Revision of theoretical direction.html</loc>
-    <lastmod>2025-08-22T15:50:50.945Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo 010. Idea new.html</loc>
+    <lastmod>2025-12-19T05:38:41.097Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/Memo S001 - Unit-wise Analysis.html</loc>
-    <lastmod>2024-10-11T06:05:18.389Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/faq.html</loc>
+    <lastmod>2025-12-18T16:07:52.709Z</lastmod>
   </url>
   <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/index.html</loc>
-    <lastmod>2025-12-18T15:16:43.586Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/C1 - Graph Neural Networks.html</loc>
-    <lastmod>2024-10-12T03:18:49.150Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D1 - Over(under)-parameterization.html</loc>
-    <lastmod>2024-10-10T15:16:26.124Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D3 - Generalized Regression Neural Network.html</loc>
-    <lastmod>2024-10-11T05:45:26.064Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D5 - Manifold Hypothesis.html</loc>
-    <lastmod>2024-10-11T15:21:29.638Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D7 - Probability spaces and random variables.html</loc>
-    <lastmod>2024-10-11T15:15:51.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/D9 - Flattening Matrix.html</loc>
-    <lastmod>2024-10-11T15:25:17.899Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPA - Graph Theory I.html</loc>
-    <lastmod>2024-10-12T14:05:41.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPA1 - Simple Graph and Definitions.html</loc>
-    <lastmod>2024-10-12T03:30:02.376Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPAA2 - Properties of Graph.html</loc>
-    <lastmod>2024-10-18T05:49:15.366Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/MPAA5 - Handshaking Lemma.html</loc>
-    <lastmod>2024-10-12T14:19:16.049Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Amane-Fujimiya.github.io/Research/temp/Theory Documentation/The Theory Documentation.html</loc>
-    <lastmod>2025-12-14T07:19:09.175Z</lastmod>
+    <loc>https://Amane-Fujimiya.github.io/Research/publications.html</loc>
+    <lastmod>2025-12-18T15:43:11.160Z</lastmod>
   </url>
 </urlset>

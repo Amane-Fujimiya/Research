@@ -1,10 +1,30 @@
 [
   {
-    "listing": "/content/res/ra06.html",
+    "listing": "/content/blog_quantum/main.html",
     "items": []
   },
   {
-    "listing": "/content/blog_quantum/main.html",
-    "items": []
+    "listing": "/content/main/bulletin.html",
+    "items": [
+      "/content/res/ra01.html",
+      "/content/res/ra06.html",
+      "/content/res/rf02.html",
+      "/content/res/r_ta.html"
+    ]
+  },
+  {
+    "listing": "/content/res/ra06.html",
+    "items": [
+      "/content/res_content/ra06content/Memo/Memo 000 - GNN Model Analysis.html",
+      "/content/res_content/ra06content/Memo/Memo 001 - A note on graph and perceptron.html",
+      "/content/res_content/ra06content/Memo/Memo 009. Revision of theoretical direction.html",
+      "/content/res_content/ra06content/Memo/Memo 002. Graph Generator Complement.html",
+      "/content/res_content/ra06content/Memo/Memo 004. Ideas.html",
+      "/content/res_content/ra06content/Memo/Memo 006. New Idea after first test.html",
+      "/content/res_content/ra06content/Memo/Memo 008. Grants.html",
+      "/content/res_content/ra06content/Memo/Memo 010. Idea new.html",
+      "/content/res_content/ra06content/Memo/Memo S001 - Unit-wise Analysis.html",
+      "/content/res_content/ra06content/Memo/Memo 007. Theoretical consideration.html"
+    ]
   }
 ]

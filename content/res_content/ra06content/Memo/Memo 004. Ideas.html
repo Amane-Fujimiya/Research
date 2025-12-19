@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>memo-004.-ideas</title>
+<title>Memo 003. Phase ideas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,6 +117,11 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../../assets/css/main.scss">
+<meta name="twitter:title" content="Memo 003. Phase ideas">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/images/favicon.ico">
+<meta name="twitter:site" content="@Fujimiya_Amane_">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -363,14 +368,30 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/Amane-Fujimiya/Research/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Memo 004. Ideas.ipynb" download="Memo 004. Ideas.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Memo 003. Phase ideas</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<section id="input-phase-i" class="level1">
-<h1>Input (Phase I)</h1>
+</header>
+
+
+<section id="input-phase-i" class="level2">
+<h2 class="anchored" data-anchor-id="input-phase-i">Input (Phase I)</h2>
 <p>In phase I, we focus on how the input was formed. That said, it feels like there is something that is inherent to the data. Supposedly, a ‘dataset’ <span class="math inline">\(\mathbf{X}\)</span> only contains the points in which comprises by size <span class="math inline">\(n=\lvert \mathbf{X} \rvert\)</span>. However, this is pretty flawed and shallow understanding of the input.</p>
 <p>Rigorously, we might be entailed to treat <span class="math inline">\(\mathbf{X}\)</span> a bit different. We say that a dataset <span class="math inline">\(\mathbf{X}\)</span> contains the following systems: - A discrete number <span class="math inline">\(n\)</span> of instances belong to <span class="math inline">\(\mathbf{X}\)</span>. - For each input <span class="math inline">\(x\in \mathbf{X}\)</span>, create an index set <span class="math inline">\(I\subset \mathbb{N}\)</span> that denotes <span class="math inline">\(x\)</span> by <span class="math inline">\(x_{i}\)</span> for <span class="math inline">\(i\in I=\{ 1,\dots,n \}\)</span>. To be honest, this can be anything - as long as it contains a placeholder assumption, and a label - one type of abstraction, then it’s fine. The point is, that every data point, ever, is <strong>discrete</strong> - there are no continuous data - even time series use discrete small laps. The only continuous thing happen is for the density of the underlying structure, which will be discussed later. - For <span class="math inline">\(\mathbf{X}\)</span>, then, the place holder would assume specific shape, that aligns with how it is interpreted. There, we have the feature space embedded into the data frame. That is, the set <span class="math inline">\(\{ x_{i} : i\in I_{{n}}\}\)</span> is provided with a metric <span class="math inline">\(M\)</span> that is its embedding space. This embedding space varies - for example, in regression, the embedding space is exactly the one-dimensional <span class="math inline">\(\mathbb{R}\)</span> space of <span class="math inline">\(x_{1}\)</span>, for single dimensional case, and for multinomial regression, then <span class="math inline">\(\mathbb{R}^{2}\)</span> of <span class="math inline">\(\{ x_{j} \}\in x_{i}\)</span> of individual sample point in the dataset. Depends on the metric, it can characterizes certain relational characteristics on which it is implied to take places within such - or rather, some structure that the data would share, based off their intrinsic interpretation.</p>
 </section>

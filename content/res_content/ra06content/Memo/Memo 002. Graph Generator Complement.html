@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>memo-002.-graph-generator-complement</title>
+<title>Memo 002. GGC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,6 +117,11 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../../assets/css/main.scss">
+<meta name="twitter:title" content="Memo 002. GGC">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://Amane-Fujimiya.github.io/Research/content/res_content/ra06content/Memo/images/favicon.ico">
+<meta name="twitter:site" content="@Fujimiya_Amane_">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -362,10 +367,26 @@ window.Quarto = {
 <div class="toc-actions"><ul><li><a href="https://github.com/Amane-Fujimiya/Research/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Memo 002. Graph Generator Complement.ipynb" download="Memo 002. Graph Generator Complement.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Memo 002. GGC</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <p>Now, the main memo has been pretty cramped with a lot of information. For the sake of quick insertion and modification, I will attempted to make this note as a separated section, focusing on the task of <em>graph generation</em> for our experiments. <em>Specification</em> will come in handy, as to clarify in such manner. # I. Representation We agreed on the <strong>representation</strong> of the dataset as matrices, comparatively, <em>adjacent</em>, <em>Laplacian</em>, and <em>incident</em> matrices. Those are some of the main matrices available on-duty and is the default of any graph, with certain exceptions (for <em>multidigraph</em>, for example). Note that most of them in some cases would be <strong>sparse matrices</strong>, so please take care of memory conservation and allocation in processing. ## I.1 Intended structure We typically, and will, use use two model as test beds: <strong>Encoder-Decoder</strong> structure and <strong>Graph Neural Network (GNN)</strong> as a more recent and modern use cases. Both uses matrices, hence why we want them all in such length. # II. Generating Principle The generation principle focus on several case-on basis: ## II.1. Orders We want to focus in this case, the ordering of the graph. Suppose a Euclidean-embedded graph <span class="math inline">\(G\)</span> on <span class="math inline">\(\mathbb{E}\subset \mathbb{R}\)</span>. Then, a topology which is order is similar to a linear structure of equivalent and identical edge length, if such edge length exists. In general, we separate such graph into the <strong>main plane</strong> and the <strong>sub-plane</strong>, with the main plane have the same property, for example, as a <em>uniformly spaced grid graph</em> of size <span class="math inline">\(n\)</span> - that is, for every node to its adjacent, the distance is equal, and their ‘angle’ must be 90 degrees. The sub-plane contains elements of dimension for each node (or edge, depends on how you code the dynamic mutation of the topology) that would changes such equality, for example, if the sub-plane is regulated by a <strong>(biased) Gaussian distribution</strong>: <span class="math display">\[p(x)= \frac{1}{\sigma \sqrt{ 2\pi }}\exp{\left( - \frac{(x-\mu)^{2}}{2\sigma^{2}} \right)}-b\]</span> evaluating based on the ‘coordinates’ from the origin of the map, then the closer to the biased point, the more probability there are for the distance to either <em>contracts</em> or <em>extends</em>, depends on how the Gaussian distribution is used to add more distance to the edge.</p>
