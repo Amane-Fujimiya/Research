@@ -4,15 +4,6 @@
     "items": []
   },
   {
-    "listing": "/content/main/bulletin.html",
-    "items": [
-      "/content/res/ra01.html",
-      "/content/res/ra06.html",
-      "/content/res/rf02.html",
-      "/content/res/r_ta.html"
-    ]
-  },
-  {
     "listing": "/content/res/ra06.html",
     "items": [
       "/content/res_content/ra06content/Memo/Memo 000 - GNN Model Analysis.html",

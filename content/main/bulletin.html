@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -45,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-4479b6699b52072925b1ce9d78582055.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-fda39a3e41c03dbce1ceb4dd0a633c5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-16f1d69917b109aa412cb9d57565a323.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../../site_libs/bootstrap/bootstrap-4479b6699b52072925b1ce9d78582055.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -73,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 <script type="text/javascript">
 
@@ -117,35 +86,6 @@ ga('send', {
 });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../assets/css/main.scss">
 <meta name="twitter:title" content="Work bulletin">
@@ -352,10 +292,6 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../citing.html"> 
-<span class="menu-text">References</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
@@ -396,7 +332,6 @@ window.Quarto = {
   <li><a href="#organization" id="toc-organization" class="nav-link active" data-scroll-target="#organization">Organization</a></li>
   <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a>
   <ul class="collapse">
-  <li><a href="#current-research" id="toc-current-research" class="nav-link" data-scroll-target="#current-research">Current research</a></li>
   <li><a href="#in-preparation-and-completed-researches" id="toc-in-preparation-and-completed-researches" class="nav-link" data-scroll-target="#in-preparation-and-completed-researches">In preparation and completed researches</a></li>
   </ul></li>
   </ul>
@@ -425,41 +360,38 @@ window.Quarto = {
 </header>
 
 
-<p>Well, hello. I think we would have nothing much to say to each other at this point, though I doubt if that is what you are waiting of at the end of the road. Nevertheless, here, we go with the content preparations and thereof. Indeed of such, we have the <em>main</em> organization sections, containing projects, researches, projects, proposals, plans, and essentially works to be done. Those will be covered in a few of those sections.</p>
+<p>I think we would have nothing much to say to each other at this point, though I doubt if that is what you are waiting of at the end of the road. Nevertheless, here, we go with the content preparations and thereof. Indeed of such, we have the <em>main</em> organization sections, containing projects, researches, projects, proposals, plans, and essentially works to be done. Those will be covered in a few of those sections.</p>
 <p>Then, we have the <em>directive</em> section, where ideas, proposals are laid out, research diagram or directive, plans and programme are laid out, alongside infrastructures and stuff that are necessary for research and further works. Then we also have <em>notes</em>, of which we defer its usage for all types of notes, expositions, drafts, important layout, points to be made across the structures, connectors, and so on. And finally, for those that does not fit, we simply use the <em>miscellaneous</em> section at will.</p>
 <p>For now, it is that way. Further purposes would be clarified later on, but essentially of such, we are current ready for any indictment in the future on the organization template.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All details regarding this are now moved to <a href="https://aml_reposition_sub_centre.gitlab.io/AML_Reposition_Sub-Main/">the deployment website</a> for streamlining mental logistic (yes, indeed) and resources since I am using freeloading resources of GitLab after all.</p>
+</div>
+</div>
 <section id="organization" class="level2">
 <h2 class="anchored" data-anchor-id="organization">Organization</h2>
-<p>As mentioned or dictated in <a href="../../publications.html">the preface</a>, there exists three main parts of this site, alongside subsidiary delegations. The tagging organization will be included in <a href="../../content/guideline/tutorial_3.html">this note</a>.</p>
+<p>As mentioned or dictated in <a href="../../publications.html">the preface</a>, there exists three main parts of this site, alongside subsidiary delegations. The tagging organization will be included in <a href="../../content/guideline/tutorial_3.html">this note</a>. Many of the details will be available in the forward deployment in <a href="https://aml_reposition_sub_centre.gitlab.io/AML_Reposition_Sub-Main/"><strong>the main station</strong></a>.</p>
 </section>
 <section id="research" class="level2">
 <h2 class="anchored" data-anchor-id="research">Research</h2>
 <p>The research page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate at outlining individual ideas and rotational constructs relevant to the research agenda.</p>
-<p>The topic of research includes (2025/28/11): <em>theoretical computer science</em>, <em>theoretical machine learning</em>, <em>theoretical artificial intelligence</em>, <em>philosophy of science</em>, <em>spectroscopic theory</em>, <em>theoretical physics</em>, <em>high-energy physics</em>, <em>Raman spectroscopy</em>, <em>automata theory</em>, <strong>probability theory</strong>, <em>theory of modelling</em>, <em>statistical machine learning</em>, <em>abstract mathematics</em>, <em>applications of category theory</em>, <em>partial differential equation (PDE)</em>, <em>neural network formalism</em>, and <em>philosophy of probability</em>.</p>
-<section id="current-research" class="level3">
-<h3 class="anchored" data-anchor-id="current-research">Current research</h3>
-<p>Currently, in production documents and manuscripts are listed as below.</p>
-<ul>
-<li>Neural network documentation (deep learning, documentation) (<a href="https://amane-fujimiya.github.io/ML_Aneurysm/">here</a>). Progress is kind of slow, but is expected - estimate first completed revision around March 2027. <code>PR01</code></li>
-<li>Neuroscience documentation (knowledge base, neuroscience) project. (Currently the website <code>html</code> template is having issues, so I am putting that on hold for now). <code>PR02</code></li>
-<li>Quantum physics blog (for now the website is in preparation, but will use <code>Hugo</code> template, so I have to familiarize myself with it). The main blog profiling is <a href="../../content/blog_quantum/main.html">This particular page</a> - estimated completion by the end of 2027. <code>PR03</code></li>
-<li>Raman spectroscopy paper: <strong>Raman spectroscopy and ML application on yogurt</strong> (organize in <a href="https://docs.google.com/spreadsheets/d/1YEIsuMXNXF8oxPgoSBlZ7ugon3b_bcVWQIRicdyTPQk/edit?usp=sharing">this sheet</a>) - in production, estimate completion around November 2026. <code>RA01</code></li>
-<li>A paper on <strong>Quantum well analysis of nonlinear absorption coefficient</strong> - will have to explain this in a few separated documents and thereof that is. Work alongside <a href="https://www.linkedin.com/in/duong-khoa-a77592378/">Duong Ngoc Khoa</a> - Estimated completion by February 2026. <code>RA02</code></li>
-<li>A paper about <strong>Vibrational spectroscopy and Raman spectroscopic theory - a review</strong> with also <em>Duong Ngoc Khoa</em> and <em>Yogesh Verma</em> (Xavier International College), where we attempt to identify the main theme, historical contexts, theoretical baseline, different interpretations, thresholds, limitations, paradoxes, weakness and dilemma of the current theoretical structures. <code>RA03</code></li>
-<li>A paper on <strong>Hall effect in electromagnetic field induced quantum well system</strong> - Adapt from earlier researches from <em>Phung Huy Hieu</em>, a new-graduated assistant researcher I know of. <code>RA04</code></li>
-<li>A paper on <strong>Quantum replica from PINNs</strong> research, taken from a previous small report that I am allowed to be used as provision and foundation of in VNU. <code>RA05</code></li>
-<li>Statistical learning theory paper, ‘<strong>Double descent in theoretical machine learning</strong>’ and potential analysis on such. It is a <em>landmark paper</em> in the sense of efforts poured in. Current main manuscript is in private - estimated February 2026 for submission. <code>RA06</code></li>
-<li>A <strong>main book</strong> called <strong>Theoretical Automata</strong> and so on. The repository for the book is already online in my <code>github</code> profile, though it is arguably, well, less updated since there are a lot of contents that I want it to just stay there. However, it is one of my <strong>main project</strong>, as the philosophy, methodology, theory and so on is all in there of my working choice. The page for such descriptions (or anything else of it), is <a href="../../content/res/r_ta.html">here</a>. <code>RM00</code></li>
-</ul>
-<p>Specific expansion and main papers are not included, as per categorization as non-trivial analysis. Those listed above are main commitments, and thus far would be well under way of constructions since, though again, not completely up-to-date.</p>
-</section>
+<p>The topic of research includes (2025/28/11): <em>theoretical computer science</em>, <em>theoretical machine learning</em>, <em>theoretical artificial intelligence</em>, <em>philosophy of science</em>, <em>spectroscopic theory</em>, <em>theoretical physics</em>, <em>high-energy physics</em>, <em>Raman spectroscopy</em>, <em>automata theory</em>, <strong>probability theory</strong>, <em>theory of modelling</em>, <em>statistical machine learning</em>, <em>abstract mathematics</em>, <em>applications of category theory</em>, <em>partial differential equation (PDE)</em>, <em>neural network formalism</em>, and <em>philosophy of probability</em>. This includes both in-preparation and proposed solutions and whatever.</p>
 <section id="in-preparation-and-completed-researches" class="level3">
 <h3 class="anchored" data-anchor-id="in-preparation-and-completed-researches">In preparation and completed researches</h3>
-<p>In preparation works can be seen in the respective page in <a href="../../publications.html">here</a>. However, confirmed works are:</p>
+<p>There are quite a few works that I think would be nice to catalogue, in case of anything to happen. This includes:</p>
 <ol type="1">
 <li>Ideathon Neuroscience and Neuropsychology in IYNA next year (Jan-Feb 2026).</li>
 <li>AI Safety Camp commitment, on the AI governance protocol (yes, it sounds quite ridiculous, but doable), around Jan-April 2026.</li>
-<li>Quantum AI Lab, on quantum machine learning and quantum computing. My expository paper would be about <strong>Quantum computing and machine learning advantage - toward actual limitation of claims</strong> as a provisional title.</li>
+<li>Quantum AI Lab (on the side), on quantum machine learning and quantum computing. My expository paper would be about <strong>Quantum computing and machine learning advantage - toward actual limitation of claims</strong> as a provisional title. There is also another one as PINNs (Physics NN, basically), though I find it particularly troublesome to pursue.</li>
+<li><strong>AI Material Science Lab (Phenikaa Centre of Advanced Research)</strong> as part of an apprentice session. Quite a freeloader style, though.</li>
 </ol>
 <p>Completed research includes:</p>
 <ul>
@@ -468,91 +400,10 @@ window.Quarto = {
 </ul>
 
 
-
 </section>
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766089549899" data-listing-reading-time-sort="2" data-listing-word-count-sort="254">
-<a href="../../content/res/ra01.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-RA01 - Raman Spectroscopic Theory
-</h5>
-<div class="card-text listing-description delink">
-The research on this site is of <strong>the Theory of Raman Spectroscopy</strong>. While the research is only me (Bui Gia Khanh), partial participants in such regard are Duong Ngoc Khoa and…<code></code>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766089984049" data-listing-reading-time-sort="5" data-listing-word-count-sort="810">
-<a href="../../content/res/ra06.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-RA06. The double descent research
-</h5>
-<div class="card-text listing-description delink">
-This is the main organization page for the double descent research. Hopefully it will amend to anything. Also, the main page on updates for the research, as well as…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1766072219473" data-listing-reading-time-sort="4" data-listing-word-count-sort="657">
-<a href="../../content/res/rf02.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-RF02 - (Manifesto) Unattainable AGI and why it is not here
-</h5>
-<div class="card-text listing-description delink">
-For a long time, there exists the debate on whether the world is approaching the fundamental point of “Singularity”, as per the creation of an artificial general…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1761211768333" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
-<a href="../../content/res/r_ta.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Theoretical Automata
-</h5>
-<div class="card-text listing-description delink">
-ello, and welcome to the <strong>Documentary of Modelling Automata</strong>. The name might already suggest something to you, but I will leave that toward your own interpretation on what we…<em></em>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
