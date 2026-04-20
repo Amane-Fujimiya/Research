@@ -186,7 +186,14 @@
     "href": "content/directive/directive.html",
     "title": "Directive",
     "section": "",
-    "text": "The directive is simple as it is. Basically to statement, ado of thoughts and what to research, instead of simply leaving there the listing of all possible research in mind. Sometimes, you have to forgo of the listing, of the speculation, to step back and enjoy the taste of having what is to be introduced and understood. Such is to say, a research paradigm.\n\n\n\n Back to top"
+    "text": "The directive is simple as it is. Basically to statement, ado of thoughts and what to research, instead of simply leaving there the listing of all possible research in mind. Sometimes, you have to forgo of the listing, of the speculation, to step back and enjoy the taste of having what is to be introduced and understood. Such is to say, a research paradigm."
+  },
+  {
+    "objectID": "content/directive/directive.html#directive-a",
+    "href": "content/directive/directive.html#directive-a",
+    "title": "Directive",
+    "section": "Directive A",
+    "text": "Directive A\nThe first directive would obviously be the formation phase of RHINELAB-RINALAB."
   },
   {
     "objectID": "content/guideline/tutorial_2.html",
@@ -214,7 +221,7 @@
     "href": "content/main/bulletin.html#research",
     "title": "Work bulletin",
     "section": "Research",
-    "text": "Research\nThe research page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate at outlining individual ideas and rotational constructs relevant to the research agenda.\nThe topic of research includes (2025/28/11): theoretical computer science, theoretical machine learning, theoretical artificial intelligence, philosophy of science, spectroscopic theory, theoretical physics, high-energy physics, Raman spectroscopy, automata theory, probability theory, theory of modelling, statistical machine learning, abstract mathematics, applications of category theory, partial differential equation (PDE), neural network formalism, and philosophy of probability. This includes both in-preparation and proposed solutions and whatever.\n\nIn preparation\nThere are quite a few works that I think would be nice to catalogue, in case of anything to happen. This includes:\n\nAI Safety Camp commitment, on the AI governance protocol (yes, it sounds quite ridiculous, but doable), around Jan-April 2026.\nQuantum AI Lab (on the side), on quantum machine learning and quantum computing. My expository paper would be about Quantum computing and machine learning advantage - toward actual limitation of claims as a provisional title. There is also another one as PINNs (Physics NN, basically), though I find it particularly troublesome to pursue.\nAI Material Science Lab (Phenikaa Centre of Advanced Research) as part of an apprentice session. Quite a freeloader style, though.\n\nMore can be found in the main AML page."
+    "text": "Research\nThe research page includes the list of projects, researches in questions, proposals and ideas that is of consideration in the future. Most of them are incomplete, and are welcoming adoption from certain collaboration if requested or encouraged. While this is not always up-to-date (as I have an internal organization structure), it should be, most of the time adequate at outlining individual ideas and rotational constructs relevant to the research agenda.\nThe topic of research includes (2025/28/11): theoretical computer science, theoretical machine learning, theoretical artificial intelligence, philosophy of science, spectroscopic theory, theoretical physics, high-energy physics, Raman spectroscopy, automata theory, probability theory, theory of modelling, statistical machine learning, abstract mathematics, applications of category theory, partial differential equation (PDE), neural network formalism, and philosophy of probability. This includes both in-preparation and proposed solutions and whatever.\n\nIn preparation\nThere are quite a few works that I think would be nice to catalogue, in case of anything to happen. This includes:\n\nQuantum AI Lab (on the side), on quantum machine learning and quantum computing. My expository paper would be about Quantum computing and machine learning advantage - toward actual limitation of claims as a provisional title. There is also another one as PINNs (Physics NN, basically), though I find it particularly troublesome to pursue.\nAI Material Science Lab (Phenikaa Centre of Advanced Research) as part of an apprentice session. Quite a freeloader style, though.\n\nMore can be found in the main AML page."
   },
   {
     "objectID": "content/res/ra06.html",
